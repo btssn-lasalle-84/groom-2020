@@ -27,9 +27,9 @@ A partir de l'application, l'occupant informe le visiteur de son état : "Libre"
 
 ## Productions
 
-- [](dossier-groom-ir-2020.pdf)
-- [](refman-groom-android.pdf)
-- [](presentation-eyraud-2020.pptx)
+- [dossier-groom-ir-2020.pdf](dossier-groom-ir-2020.pdf)
+- [refman-groom-android.pdf](refman-groom-android.pdf)
+- [presentation-eyraud-2020.pptx](presentation-eyraud-2020.pptx)
 
 ## Vidéo
 
