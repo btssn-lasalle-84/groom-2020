@@ -4,8 +4,8 @@ Le portier connecté « grOOm » permettra à l'occupant du bureau de communique
 
 - [Projet GROOM 2020](#projet-groom-2020)
   - [Auteurs](#auteurs)
-- [Projet {#projet}](#projet-projet)
-  - [Présentation {#presentation}](#présentation-presentation)
+- [Projet](#projet-projet)
+  - [Présentation](#présentation-presentation)
   - [Productions](#productions)
   - [Vidéo](#vidéo)
   - [Licence GPL](#licence-gpl)
@@ -15,9 +15,9 @@ Le portier connecté « grOOm » permettra à l'occupant du bureau de communique
 - Android : Grégory Eyraud <<gregory.eyraud@gmail.com>>
 - Qt : Etienne Valette <valette.etienne@gmail.com>
 
-# Projet {#projet}
+# Projet
 
-## Présentation {#presentation}
+## Présentation
 
 Le portier connecté « grOOm » permettra à l'occupant du bureau de communiquer sa disponibilité avec des personnes extérieures (visiteurs). Pour cela, il utilise une application soit en version PC soit mobile.
 
