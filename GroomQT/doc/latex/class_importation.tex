@@ -1,0 +1,127 @@
+\hypertarget{class_importation}{}\subsection{Référence de la classe Importation}
+\label{class_importation}\index{Importation@{Importation}}
+
+
+Classe permetant de d\textquotesingle{}importer le calendrier.  
+
+
+
+
+{\ttfamily \#include \char`\"{}importation.\+h\char`\"{}}
+
+
+
+Graphe de collaboration de Importation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_importation__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_importation_ad3a625fb90d559ff048151a4cb4646b4}{Importation} (\hyperlink{class_q_widget}{Q\+Widget} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_importation}{Importation}. \end{DoxyCompactList}\item 
+\hyperlink{class_importation_ac9f6f0a390369d5732576fb38a8e62c7}{$\sim$\+Importation} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_importation}{Importation}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Importation $\ast$ \hyperlink{class_importation_ace5d522c27957bac47fd8d3234af1d2e}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Classe permetant de d\textquotesingle{}importer le calendrier. 
+
+Définition à la ligne \hyperlink{importation_8h_source_l00017}{17} du fichier \hyperlink{importation_8h_source}{importation.\+h}.
+
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_importation_ad3a625fb90d559ff048151a4cb4646b4}\label{class_importation_ad3a625fb90d559ff048151a4cb4646b4}} 
+\index{Importation@{Importation}!Importation@{Importation}}
+\index{Importation@{Importation}!Importation@{Importation}}
+\paragraph{\texorpdfstring{Importation()}{Importation()}}
+{\footnotesize\ttfamily Importation\+::\+Importation (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_widget}{Q\+Widget} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructeur de la classe \hyperlink{class_importation}{Importation}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{importation_8cpp_source_l00004}{4} du fichier \hyperlink{importation_8cpp_source}{importation.\+cpp}.
+
+
+
+Références \hyperlink{importation_8h_source_l00038}{ui}.
+
+
+\begin{DoxyCode}
+00004                                         : \hyperlink{class_q_dialog}{QDialog}(parent), \hyperlink{class_importation_ace5d522c27957bac47fd8d3234af1d2e}{ui}(\textcolor{keyword}{new} Ui::Importation)
+00005 \{
+00006      qDebug() << Q\_FUNC\_INFO;
+00007     \hyperlink{class_importation_ace5d522c27957bac47fd8d3234af1d2e}{ui}->setupUi(\textcolor{keyword}{this});
+00008 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_importation_ac9f6f0a390369d5732576fb38a8e62c7}\label{class_importation_ac9f6f0a390369d5732576fb38a8e62c7}} 
+\index{Importation@{Importation}!````~Importation@{$\sim$\+Importation}}
+\index{````~Importation@{$\sim$\+Importation}!Importation@{Importation}}
+\paragraph{\texorpdfstring{$\sim$\+Importation()}{~Importation()}}
+{\footnotesize\ttfamily Importation\+::$\sim$\+Importation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \hyperlink{class_importation}{Importation}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{importation_8cpp_source_l00010}{10} du fichier \hyperlink{importation_8cpp_source}{importation.\+cpp}.
+
+
+
+Références \hyperlink{importation_8h_source_l00038}{ui}.
+
+
+\begin{DoxyCode}
+00011 \{
+00012     \textcolor{keyword}{delete} \hyperlink{class_importation_ace5d522c27957bac47fd8d3234af1d2e}{ui};
+00013     qDebug() << Q\_FUNC\_INFO;
+00014 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_importation_ace5d522c27957bac47fd8d3234af1d2e}\label{class_importation_ace5d522c27957bac47fd8d3234af1d2e}} 
+\index{Importation@{Importation}!ui@{ui}}
+\index{ui@{ui}!Importation@{Importation}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Importation$\ast$ Importation\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Définition à la ligne \hyperlink{importation_8h_source_l00038}{38} du fichier \hyperlink{importation_8h_source}{importation.\+h}.
+
+
+
+Référencé par \hyperlink{importation_8cpp_source_l00004}{Importation()}, et \hyperlink{importation_8cpp_source_l00010}{$\sim$\+Importation()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{importation_8h}{importation.\+h}\item 
+\hyperlink{importation_8cpp}{importation.\+cpp}\end{DoxyCompactItemize}

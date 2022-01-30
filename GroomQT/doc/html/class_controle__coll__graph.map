@@ -1,0 +1,10 @@
+<map id="Controle" name="Controle">
+<area shape="rect" id="node3" href="$class_ihm_groom.html" title="Déclaration de la classe IhmGroom. " alt="" coords="401,885,588,1315"/>
+<area shape="rect" id="node2" href="$class_q_object.html" title="{QObject\n||}" alt="" coords="311,139,382,217"/>
+<area shape="rect" id="node4" href="$class_q_widget.html" title="{QWidget\n||}" alt="" coords="228,555,302,632"/>
+<area shape="rect" id="node5" href="$class_communication_bluetooth.html" title="Class permettant de mettre en place une communication bluetooth. " alt="" coords="76,132,272,224"/>
+<area shape="rect" id="node6" href="$class_q_dialog.html" title="{QDialog\n||}" alt="" coords="614,5,684,83"/>
+<area shape="rect" id="node7" href="$class_importation.html" title="Classe permetant de d&#39;importer le calendrier. " alt="" coords="661,248,776,340"/>
+<area shape="rect" id="node8" href="$class_message_personnalise.html" title="Classe permetant de personnalisé son message. " alt="" coords="458,132,637,224"/>
+<area shape="rect" id="node9" href="$class_bdd.html" title="{Bdd\n|&#45; ui\l|+ Bdd()\l+ ~Bdd()\l}" alt="" coords="811,248,884,340"/>
+</map>

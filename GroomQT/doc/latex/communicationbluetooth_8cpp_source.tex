@@ -1,0 +1,21 @@
+\hypertarget{communicationbluetooth_8cpp_source}{}\subsection{communicationbluetooth.\+cpp}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include "\hyperlink{communicationbluetooth_8h}{communicationbluetooth.h}"}
+00002 \textcolor{preprocessor}{#include "ui\_communicationbluetooth.h"}
+00003 
+\Hypertarget{communicationbluetooth_8cpp_source_l00004}\hyperlink{class_communication_bluetooth_a30f88d1710eb41d9c8c4b390b5c7b6f7}{00004} \hyperlink{class_communication_bluetooth_a30f88d1710eb41d9c8c4b390b5c7b6f7}{CommunicationBluetooth::CommunicationBluetooth}(
+      \hyperlink{class_q_widget}{QWidget} *parent) :
+00005     \hyperlink{class_q_dialog}{QDialog}(parent),
+00006     ui(new \hyperlink{namespace_ui}{Ui}::\hyperlink{class_communication_bluetooth}{CommunicationBluetooth})
+00007 \{
+00008      qDebug() << Q\_FUNC\_INFO;
+00009     \hyperlink{class_communication_bluetooth_a2721cf9f9503a98770981ffdad09f9a1}{ui}->setupUi(\textcolor{keyword}{this});
+00010 \}
+00011 
+\Hypertarget{communicationbluetooth_8cpp_source_l00012}\hyperlink{class_communication_bluetooth_a13c72d24359f40c204e94f3ef1ab6fd3}{00012} \hyperlink{class_communication_bluetooth_a13c72d24359f40c204e94f3ef1ab6fd3}{CommunicationBluetooth::~CommunicationBluetooth}()
+00013 \{
+00014     \textcolor{keyword}{delete} \hyperlink{class_communication_bluetooth_a2721cf9f9503a98770981ffdad09f9a1}{ui};
+00015     qDebug() << Q\_FUNC\_INFO;
+00016 \}
+\end{DoxyCode}

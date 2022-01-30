@@ -1,0 +1,797 @@
+\hypertarget{class_controle}{}\subsection{Référence de la classe Controle}
+\label{class_controle}\index{Controle@{Controle}}
+
+
+Classe assurant le controle et la validé de l\textquotesingle{}envoie et réception des trames.  
+
+
+
+
+{\ttfamily \#include \char`\"{}controle.\+h\char`\"{}}
+
+
+
+Graphe de collaboration de Controle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controle__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controle_af64a33acc664bf02f2ea0b4f27f781e6}{Controle} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur classe \hyperlink{class_controle}{Controle}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_controle_acabf3768430c7f1acb268ca0fa1ddf99}{get\+Etat\+Sonnette} ()
+\begin{DoxyCompactList}\small\item\em retroune l\textquotesingle{}état de la sonnette \end{DoxyCompactList}\item 
+int \hyperlink{class_controle_ac3bd8e8621cee56d4343e21a624e1c48}{get\+Etat\+Utilisateur} ()
+\begin{DoxyCompactList}\small\item\em retroune l\textquotesingle{}état de la sonnette \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_controle_a8d2891b2b01c503d10f775b4b14a3777}{get\+Fonction} ()
+\begin{DoxyCompactList}\small\item\em retroune la fonction \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_controle_ac6e8590a5108e97fce3ce3aa43feb881}{get\+Nom} ()
+\begin{DoxyCompactList}\small\item\em retroune le nom \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_controle_a0164fd9066b1703498576095ab5642c5}{get\+Prenom} ()
+\begin{DoxyCompactList}\small\item\em retroune le prenom \end{DoxyCompactList}\item 
+bool \hyperlink{class_controle_abf7c9fefec4980b90c9f759d48fd17aa}{get\+Presence} ()
+\begin{DoxyCompactList}\small\item\em retroune l\textquotesingle{}état de la sonnette \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_ac706c5e9ede46dab70631281b084e233}{set\+Etat\+Sonnette} (bool new\+Etat\+Sonnette)
+\begin{DoxyCompactList}\small\item\em modifie l\textquotesingle{}état de la sonnette \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_a62db54114d126d03dd332332b3942320}{set\+Etat\+Utilisateur} (int new\+Etat\+Utilisateur)
+\begin{DoxyCompactList}\small\item\em modifie l\textquotesingle{}état de la sonnette \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_abe472f4fd197c0fc679539e0b75a6e15}{set\+Fonction} (Q\+String new\+Fonction)
+\begin{DoxyCompactList}\small\item\em modifie la fonction \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_a0f731cdb733053f7be24e7042611601c}{set\+Nom} (Q\+String new\+Nom)
+\begin{DoxyCompactList}\small\item\em modifie le nom \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_ab046adc050872b4034c1500eb2e1b728}{set\+Prenom} (Q\+String new\+Prenom)
+\item 
+void \hyperlink{class_controle_a65904fe693663759a4cde4e4d66e36e8}{set\+Presence} (bool new\+Presence)
+\begin{DoxyCompactList}\small\item\em modifie l\textquotesingle{}état de la présence \end{DoxyCompactList}\item 
+\hyperlink{class_controle_a98f5d2630efbdb5f469cbb2675725b20}{$\sim$\+Controle} ()
+\begin{DoxyCompactList}\small\item\em Destructeur classe \hyperlink{class_controle}{Controle}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_controle_a316808279226b01ac8fe51ab396b1b67}{coder\+Trame\+Affichage} (Q\+String \hyperlink{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}{trame\+Affichage})
+\begin{DoxyCompactList}\small\item\em coder la trame Affichage \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_a9ba8efd42493ffd4288537a1ace4e220}{coder\+Trame\+Groom} (Q\+String \hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trame\+Groom})
+\begin{DoxyCompactList}\small\item\em coder la trame Groom \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_a77d635484c2e6fca851d40e76f422fce}{coder\+Trame\+Msg\+Perso} (Q\+String \hyperlink{class_controle_a5cb6dbeb8b2f066b1e757f3c933ea503}{trame\+Msg\+Perso})
+\begin{DoxyCompactList}\small\item\em coder la trame Msg Perso \end{DoxyCompactList}\item 
+void \hyperlink{class_controle_a2dcdd01e67e6ce8769188d62ce0c262a}{decoder\+Trame\+Groom} (Q\+String \hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trame\+Groom})
+\begin{DoxyCompactList}\small\item\em Décode la trame Groom. \end{DoxyCompactList}\item 
+bool \hyperlink{class_controle_a4f40023a18e4e656282a15d5657e0a25}{verifier\+Checksum} (Q\+String \hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trame\+Groom})
+\begin{DoxyCompactList}\small\item\em Regarde le checksum de la trame\+Groom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_communication_bluetooth}{Communication\+Bluetooth} $\ast$ \hyperlink{class_controle_a5d818564000173732472eb9ac20e53aa}{communication\+Bluetooth}
+\item 
+bool \hyperlink{class_controle_afddf1dce812ff88577e308684b564f33}{etat\+Sonnette}
+\item 
+int \hyperlink{class_controle_a690595803de8f5c172b8bc46122ebb1a}{etat\+Utilisateur}
+\item 
+Q\+String \hyperlink{class_controle_af733c06309ce63fb9157073574e42b00}{fonction}
+\item 
+\hyperlink{class_message_personnalise}{Message\+Personnalise} $\ast$ \hyperlink{class_controle_a6240fc19c937146243bcd950e5408481}{message\+Personnalise}
+\item 
+Q\+String \hyperlink{class_controle_ad47747a49ca21434f6d43d451d3cf134}{nom}
+\item 
+Q\+String \hyperlink{class_controle_a29e37e25a6fd4643ddea3fef47e3bc51}{prenom}
+\item 
+bool \hyperlink{class_controle_a089f74f48f24f09e7fc51b03a5ede79e}{presence}
+\item 
+Q\+String \hyperlink{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}{trame\+Affichage}
+\item 
+Q\+String \hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trame\+Groom}
+\item 
+Q\+String \hyperlink{class_controle_a5cb6dbeb8b2f066b1e757f3c933ea503}{trame\+Msg\+Perso}
+\item 
+\hyperlink{class_ihm_groom}{Ihm\+Groom} $\ast$ \hyperlink{class_controle_a2dd60c955396dd80426c1a74f56ea611}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Classe assurant le controle et la validé de l\textquotesingle{}envoie et réception des trames. 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00022}{22} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_controle_af64a33acc664bf02f2ea0b4f27f781e6}\label{class_controle_af64a33acc664bf02f2ea0b4f27f781e6}} 
+\index{Controle@{Controle}!Controle@{Controle}}
+\index{Controle@{Controle}!Controle@{Controle}}
+\paragraph{\texorpdfstring{Controle()}{Controle()}}
+{\footnotesize\ttfamily Controle\+::\+Controle (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructeur classe \hyperlink{class_controle}{Controle}. 
+
+Attribut de la fonction de l\textquotesingle{}utilisateur 
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00005}{5} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00070}{etat\+Sonnette}.
+
+
+\begin{DoxyCode}
+00005                                   : \hyperlink{class_q_object}{QObject}(parent)
+00006 \{
+00007      qDebug() << Q\_FUNC\_INFO;
+00008    \textcolor{comment}{//     ui = new IhmGroom;}
+00009     \hyperlink{class_controle_afddf1dce812ff88577e308684b564f33}{etatSonnette} = \textcolor{keyword}{true};
+00010 
+00011 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a98f5d2630efbdb5f469cbb2675725b20}\label{class_controle_a98f5d2630efbdb5f469cbb2675725b20}} 
+\index{Controle@{Controle}!````~Controle@{$\sim$\+Controle}}
+\index{````~Controle@{$\sim$\+Controle}!Controle@{Controle}}
+\paragraph{\texorpdfstring{$\sim$\+Controle()}{~Controle()}}
+{\footnotesize\ttfamily Controle\+::$\sim$\+Controle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur classe \hyperlink{class_controle}{Controle}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00013}{13} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+\begin{DoxyCode}
+00014 \{
+00015     qDebug() << Q\_FUNC\_INFO;
+00016 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_controle_a316808279226b01ac8fe51ab396b1b67}\label{class_controle_a316808279226b01ac8fe51ab396b1b67}} 
+\index{Controle@{Controle}!coder\+Trame\+Affichage@{coder\+Trame\+Affichage}}
+\index{coder\+Trame\+Affichage@{coder\+Trame\+Affichage}!Controle@{Controle}}
+\paragraph{\texorpdfstring{coder\+Trame\+Affichage()}{coderTrameAffichage()}}
+{\footnotesize\ttfamily Controle\+::coder\+Trame\+Affichage (\begin{DoxyParamCaption}\item[{Q\+String}]{trame\+Affichage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+coder la trame Affichage 
+
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00101}{101} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8cpp_source_l00075}{Ihm\+Groom\+::changement\+Fonction()}, \hyperlink{ihmgroom_8cpp_source_l00065}{Ihm\+Groom\+::changement\+Nom()}, \hyperlink{ihmgroom_8cpp_source_l00070}{Ihm\+Groom\+::changement\+Prenom()}, \hyperlink{controle_8cpp_source_l00092}{set\+Fonction()}, \hyperlink{controle_8cpp_source_l00075}{set\+Nom()}, \hyperlink{controle_8cpp_source_l00084}{set\+Prenom()}, et \hyperlink{controle_8h_source_l00029}{ui}.
+
+
+\begin{DoxyCode}
+00102 \{
+00103     \hyperlink{class_controle_a0f731cdb733053f7be24e7042611601c}{setNom}(\hyperlink{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}{trameAffichage}.section(\textcolor{stringliteral}{";"},1,1));
+00104 
+00105     \hyperlink{class_controle_ab046adc050872b4034c1500eb2e1b728}{setPrenom}(\hyperlink{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}{trameAffichage}.section(\textcolor{stringliteral}{";"},2,2));
+00106 
+00107     \hyperlink{class_controle_abe472f4fd197c0fc679539e0b75a6e15}{setFonction}(\hyperlink{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}{trameAffichage}.section(\textcolor{stringliteral}{";"},3,3));
+00108 
+00109     \hyperlink{class_controle_a2dd60c955396dd80426c1a74f56ea611}{ui}->\hyperlink{class_ihm_groom_aa270d1fb6a7a9c1385c4ae3e67451ea0}{changementNom}();
+00110     \hyperlink{class_controle_a2dd60c955396dd80426c1a74f56ea611}{ui}->\hyperlink{class_ihm_groom_a2e8db190224f15326552a5bd642a9347}{changementPrenom}();
+00111     \hyperlink{class_controle_a2dd60c955396dd80426c1a74f56ea611}{ui}->\hyperlink{class_ihm_groom_afc6c48489b270b22a660e32668d6b2ca}{changementFonction}();
+00112 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a9ba8efd42493ffd4288537a1ace4e220}\label{class_controle_a9ba8efd42493ffd4288537a1ace4e220}} 
+\index{Controle@{Controle}!coder\+Trame\+Groom@{coder\+Trame\+Groom}}
+\index{coder\+Trame\+Groom@{coder\+Trame\+Groom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{coder\+Trame\+Groom()}{coderTrameGroom()}}
+{\footnotesize\ttfamily Controle\+::coder\+Trame\+Groom (\begin{DoxyParamCaption}\item[{Q\+String}]{trame\+Groom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+coder la trame Groom 
+
+\mbox{\Hypertarget{class_controle_a77d635484c2e6fca851d40e76f422fce}\label{class_controle_a77d635484c2e6fca851d40e76f422fce}} 
+\index{Controle@{Controle}!coder\+Trame\+Msg\+Perso@{coder\+Trame\+Msg\+Perso}}
+\index{coder\+Trame\+Msg\+Perso@{coder\+Trame\+Msg\+Perso}!Controle@{Controle}}
+\paragraph{\texorpdfstring{coder\+Trame\+Msg\+Perso()}{coderTrameMsgPerso()}}
+{\footnotesize\ttfamily Controle\+::coder\+Trame\+Msg\+Perso (\begin{DoxyParamCaption}\item[{Q\+String}]{trame\+Msg\+Perso }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+coder la trame Msg Perso 
+
+\mbox{\Hypertarget{class_controle_a2dcdd01e67e6ce8769188d62ce0c262a}\label{class_controle_a2dcdd01e67e6ce8769188d62ce0c262a}} 
+\index{Controle@{Controle}!decoder\+Trame\+Groom@{decoder\+Trame\+Groom}}
+\index{decoder\+Trame\+Groom@{decoder\+Trame\+Groom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{decoder\+Trame\+Groom()}{decoderTrameGroom()}}
+{\footnotesize\ttfamily Controle\+::decoder\+Trame\+Groom (\begin{DoxyParamCaption}\item[{Q\+String}]{trame\+Groom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Décode la trame Groom. 
+
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00049}{49} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8cpp_source_l00028}{set\+Etat\+Sonnette()}, \hyperlink{controle_8cpp_source_l00018}{set\+Etat\+Utilisateur()}, et \hyperlink{controle_8cpp_source_l00038}{set\+Presence()}.
+
+
+\begin{DoxyCode}
+00050 \{
+00051 
+00052     \hyperlink{class_controle_a62db54114d126d03dd332332b3942320}{setEtatUtilisateur}((\hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trameGroom}.section(\textcolor{stringliteral}{";"},1,1)).toInt());
+00053 
+00054 
+00055     \textcolor{keywordflow}{if} (\hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trameGroom}.section(\textcolor{stringliteral}{";"},2,2) == 1)
+00056     \{
+00057         \hyperlink{class_controle_ac706c5e9ede46dab70631281b084e233}{setEtatSonnette}(\textcolor{keyword}{true});
+00058     \}
+00059     \textcolor{keywordflow}{else}
+00060     \{
+00061         \hyperlink{class_controle_ac706c5e9ede46dab70631281b084e233}{setEtatSonnette}(\textcolor{keyword}{false});
+00062     \}
+00063 
+00064     \textcolor{keywordflow}{if} (\hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trameGroom}.section(\textcolor{stringliteral}{";"},3,3) == 1)
+00065     \{
+00066         \hyperlink{class_controle_a65904fe693663759a4cde4e4d66e36e8}{setPresence}(\textcolor{keyword}{true});
+00067     \}
+00068     \textcolor{keywordflow}{else}
+00069     \{
+00070         \hyperlink{class_controle_a65904fe693663759a4cde4e4d66e36e8}{setPresence}(\textcolor{keyword}{false});
+00071     \}
+00072 
+00073 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_acabf3768430c7f1acb268ca0fa1ddf99}\label{class_controle_acabf3768430c7f1acb268ca0fa1ddf99}} 
+\index{Controle@{Controle}!get\+Etat\+Sonnette@{get\+Etat\+Sonnette}}
+\index{get\+Etat\+Sonnette@{get\+Etat\+Sonnette}!Controle@{Controle}}
+\paragraph{\texorpdfstring{get\+Etat\+Sonnette()}{getEtatSonnette()}}
+{\footnotesize\ttfamily Controle\+::get\+Etat\+Sonnette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retroune l\textquotesingle{}état de la sonnette 
+
+\begin{DoxyReturn}{Renvoie}
+etat\+Sonnette 
+\end{DoxyReturn}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00033}{33} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00070}{etat\+Sonnette}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00201}{Ihm\+Groom\+::inversion\+Image\+Sonnette()}.
+
+
+\begin{DoxyCode}
+00034 \{
+00035     \textcolor{keywordflow}{return} \hyperlink{class_controle_afddf1dce812ff88577e308684b564f33}{etatSonnette};
+00036 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_ac3bd8e8621cee56d4343e21a624e1c48}\label{class_controle_ac3bd8e8621cee56d4343e21a624e1c48}} 
+\index{Controle@{Controle}!get\+Etat\+Utilisateur@{get\+Etat\+Utilisateur}}
+\index{get\+Etat\+Utilisateur@{get\+Etat\+Utilisateur}!Controle@{Controle}}
+\paragraph{\texorpdfstring{get\+Etat\+Utilisateur()}{getEtatUtilisateur()}}
+{\footnotesize\ttfamily Controle\+::get\+Etat\+Utilisateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retroune l\textquotesingle{}état de la sonnette 
+
+\begin{DoxyReturn}{Renvoie}
+etat\+Utilisateur 
+\end{DoxyReturn}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00023}{23} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00069}{etat\+Utilisateur}.
+
+
+\begin{DoxyCode}
+00024 \{
+00025     \textcolor{keywordflow}{return} \hyperlink{class_controle_a690595803de8f5c172b8bc46122ebb1a}{etatUtilisateur};
+00026 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a8d2891b2b01c503d10f775b4b14a3777}\label{class_controle_a8d2891b2b01c503d10f775b4b14a3777}} 
+\index{Controle@{Controle}!get\+Fonction@{get\+Fonction}}
+\index{get\+Fonction@{get\+Fonction}!Controle@{Controle}}
+\paragraph{\texorpdfstring{get\+Fonction()}{getFonction()}}
+{\footnotesize\ttfamily Controle\+::get\+Fonction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retroune la fonction 
+
+\begin{DoxyReturn}{Renvoie}
+fonction 
+\end{DoxyReturn}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00096}{96} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00075}{fonction}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00075}{Ihm\+Groom\+::changement\+Fonction()}.
+
+
+\begin{DoxyCode}
+00097 \{
+00098     \textcolor{keywordflow}{return} \hyperlink{class_controle_af733c06309ce63fb9157073574e42b00}{fonction};
+00099 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_ac6e8590a5108e97fce3ce3aa43feb881}\label{class_controle_ac6e8590a5108e97fce3ce3aa43feb881}} 
+\index{Controle@{Controle}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Controle\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retroune le nom 
+
+\begin{DoxyReturn}{Renvoie}
+nom 
+\end{DoxyReturn}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00080}{80} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00073}{nom}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00065}{Ihm\+Groom\+::changement\+Nom()}.
+
+
+\begin{DoxyCode}
+00081 \{
+00082     \textcolor{keywordflow}{return} \hyperlink{class_controle_ad47747a49ca21434f6d43d451d3cf134}{nom};
+00083 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a0164fd9066b1703498576095ab5642c5}\label{class_controle_a0164fd9066b1703498576095ab5642c5}} 
+\index{Controle@{Controle}!get\+Prenom@{get\+Prenom}}
+\index{get\+Prenom@{get\+Prenom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{get\+Prenom()}{getPrenom()}}
+{\footnotesize\ttfamily Controle\+::get\+Prenom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retroune le prenom 
+
+\begin{DoxyReturn}{Renvoie}
+prenom 
+\end{DoxyReturn}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00088}{88} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00074}{prenom}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00070}{Ihm\+Groom\+::changement\+Prenom()}.
+
+
+\begin{DoxyCode}
+00089 \{
+00090     \textcolor{keywordflow}{return} \hyperlink{class_controle_a29e37e25a6fd4643ddea3fef47e3bc51}{prenom};
+00091 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_abf7c9fefec4980b90c9f759d48fd17aa}\label{class_controle_abf7c9fefec4980b90c9f759d48fd17aa}} 
+\index{Controle@{Controle}!get\+Presence@{get\+Presence}}
+\index{get\+Presence@{get\+Presence}!Controle@{Controle}}
+\paragraph{\texorpdfstring{get\+Presence()}{getPresence()}}
+{\footnotesize\ttfamily Controle\+::get\+Presence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retroune l\textquotesingle{}état de la sonnette 
+
+\begin{DoxyReturn}{Renvoie}
+presence 
+\end{DoxyReturn}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00043}{43} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00071}{presence}.
+
+
+\begin{DoxyCode}
+00044 \{
+00045     \textcolor{keywordflow}{return} \hyperlink{class_controle_a089f74f48f24f09e7fc51b03a5ede79e}{presence};
+00046 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_ac706c5e9ede46dab70631281b084e233}\label{class_controle_ac706c5e9ede46dab70631281b084e233}} 
+\index{Controle@{Controle}!set\+Etat\+Sonnette@{set\+Etat\+Sonnette}}
+\index{set\+Etat\+Sonnette@{set\+Etat\+Sonnette}!Controle@{Controle}}
+\paragraph{\texorpdfstring{set\+Etat\+Sonnette()}{setEtatSonnette()}}
+{\footnotesize\ttfamily Controle\+::set\+Etat\+Sonnette (\begin{DoxyParamCaption}\item[{bool}]{new\+Etat\+Sonnette }\end{DoxyParamCaption})}
+
+
+
+modifie l\textquotesingle{}état de la sonnette 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em etat\+Sonnette} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00028}{28} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00070}{etat\+Sonnette}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00049}{decoder\+Trame\+Groom()}, et \hyperlink{ihmgroom_8cpp_source_l00201}{Ihm\+Groom\+::inversion\+Image\+Sonnette()}.
+
+
+\begin{DoxyCode}
+00029 \{
+00030     \hyperlink{class_controle_afddf1dce812ff88577e308684b564f33}{etatSonnette} = newEtatSonnette;
+00031 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a62db54114d126d03dd332332b3942320}\label{class_controle_a62db54114d126d03dd332332b3942320}} 
+\index{Controle@{Controle}!set\+Etat\+Utilisateur@{set\+Etat\+Utilisateur}}
+\index{set\+Etat\+Utilisateur@{set\+Etat\+Utilisateur}!Controle@{Controle}}
+\paragraph{\texorpdfstring{set\+Etat\+Utilisateur()}{setEtatUtilisateur()}}
+{\footnotesize\ttfamily Controle\+::set\+Etat\+Utilisateur (\begin{DoxyParamCaption}\item[{int}]{new\+Etat\+Utilisateur }\end{DoxyParamCaption})}
+
+
+
+modifie l\textquotesingle{}état de la sonnette 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em etat\+Utilisateur} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00018}{18} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00069}{etat\+Utilisateur}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00049}{decoder\+Trame\+Groom()}, \hyperlink{ihmgroom_8cpp_source_l00229}{Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+2\+\_\+clicked()}, \hyperlink{ihmgroom_8cpp_source_l00219}{Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+3\+\_\+clicked()}, et \hyperlink{ihmgroom_8cpp_source_l00224}{Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+4\+\_\+clicked()}.
+
+
+\begin{DoxyCode}
+00019 \{
+00020     \hyperlink{class_controle_a690595803de8f5c172b8bc46122ebb1a}{etatUtilisateur} = newEtatUtilisateur;
+00021 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_abe472f4fd197c0fc679539e0b75a6e15}\label{class_controle_abe472f4fd197c0fc679539e0b75a6e15}} 
+\index{Controle@{Controle}!set\+Fonction@{set\+Fonction}}
+\index{set\+Fonction@{set\+Fonction}!Controle@{Controle}}
+\paragraph{\texorpdfstring{set\+Fonction()}{setFonction()}}
+{\footnotesize\ttfamily Controle\+::set\+Fonction (\begin{DoxyParamCaption}\item[{Q\+String}]{new\+Fonction }\end{DoxyParamCaption})}
+
+
+
+modifie la fonction 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fonction} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00092}{92} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00075}{fonction}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00101}{coder\+Trame\+Affichage()}.
+
+
+\begin{DoxyCode}
+00093 \{
+00094     \hyperlink{class_controle_af733c06309ce63fb9157073574e42b00}{fonction} = newFonction;
+00095 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a0f731cdb733053f7be24e7042611601c}\label{class_controle_a0f731cdb733053f7be24e7042611601c}} 
+\index{Controle@{Controle}!set\+Nom@{set\+Nom}}
+\index{set\+Nom@{set\+Nom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{set\+Nom()}{setNom()}}
+{\footnotesize\ttfamily Controle\+::set\+Nom (\begin{DoxyParamCaption}\item[{Q\+String}]{new\+Nom }\end{DoxyParamCaption})}
+
+
+
+modifie le nom 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00075}{75} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00073}{nom}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00101}{coder\+Trame\+Affichage()}.
+
+
+\begin{DoxyCode}
+00076 \{
+00077     \hyperlink{class_controle_ad47747a49ca21434f6d43d451d3cf134}{nom} = newNom;
+00078 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_ab046adc050872b4034c1500eb2e1b728}\label{class_controle_ab046adc050872b4034c1500eb2e1b728}} 
+\index{Controle@{Controle}!set\+Prenom@{set\+Prenom}}
+\index{set\+Prenom@{set\+Prenom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{set\+Prenom()}{setPrenom()}}
+{\footnotesize\ttfamily void Controle\+::set\+Prenom (\begin{DoxyParamCaption}\item[{Q\+String}]{new\+Prenom }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00084}{84} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00074}{prenom}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00101}{coder\+Trame\+Affichage()}.
+
+
+\begin{DoxyCode}
+00085 \{
+00086     \hyperlink{class_controle_a29e37e25a6fd4643ddea3fef47e3bc51}{prenom} = newPrenom;
+00087 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a65904fe693663759a4cde4e4d66e36e8}\label{class_controle_a65904fe693663759a4cde4e4d66e36e8}} 
+\index{Controle@{Controle}!set\+Presence@{set\+Presence}}
+\index{set\+Presence@{set\+Presence}!Controle@{Controle}}
+\paragraph{\texorpdfstring{set\+Presence()}{setPresence()}}
+{\footnotesize\ttfamily Controle\+::set\+Presence (\begin{DoxyParamCaption}\item[{bool}]{new\+Presence }\end{DoxyParamCaption})}
+
+
+
+modifie l\textquotesingle{}état de la présence 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em presence} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{controle_8cpp_source_l00038}{38} du fichier \hyperlink{controle_8cpp_source}{controle.\+cpp}.
+
+
+
+Références \hyperlink{controle_8h_source_l00071}{presence}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00049}{decoder\+Trame\+Groom()}.
+
+
+\begin{DoxyCode}
+00039 \{
+00040     \hyperlink{class_controle_a089f74f48f24f09e7fc51b03a5ede79e}{presence} = newPresence;
+00041 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_controle_a4f40023a18e4e656282a15d5657e0a25}\label{class_controle_a4f40023a18e4e656282a15d5657e0a25}} 
+\index{Controle@{Controle}!verifier\+Checksum@{verifier\+Checksum}}
+\index{verifier\+Checksum@{verifier\+Checksum}!Controle@{Controle}}
+\paragraph{\texorpdfstring{verifier\+Checksum()}{verifierChecksum()}}
+{\footnotesize\ttfamily Controle\+::verifier\+Checksum (\begin{DoxyParamCaption}\item[{Q\+String}]{trame\+Groom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Regarde le checksum de la trame\+Groom. 
+
+Trame à envoyer à la liaison série \begin{DoxyReturn}{Renvoie}
+retourne un true ou false 
+\end{DoxyReturn}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_controle_a5d818564000173732472eb9ac20e53aa}\label{class_controle_a5d818564000173732472eb9ac20e53aa}} 
+\index{Controle@{Controle}!communication\+Bluetooth@{communication\+Bluetooth}}
+\index{communication\+Bluetooth@{communication\+Bluetooth}!Controle@{Controle}}
+\paragraph{\texorpdfstring{communication\+Bluetooth}{communicationBluetooth}}
+{\footnotesize\ttfamily \hyperlink{class_communication_bluetooth}{Communication\+Bluetooth}$\ast$ Controle\+::communication\+Bluetooth\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Définition à la ligne \hyperlink{controle_8h_source_l00027}{27} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+\mbox{\Hypertarget{class_controle_afddf1dce812ff88577e308684b564f33}\label{class_controle_afddf1dce812ff88577e308684b564f33}} 
+\index{Controle@{Controle}!etat\+Sonnette@{etat\+Sonnette}}
+\index{etat\+Sonnette@{etat\+Sonnette}!Controle@{Controle}}
+\paragraph{\texorpdfstring{etat\+Sonnette}{etatSonnette}}
+{\footnotesize\ttfamily bool Controle\+::etat\+Sonnette\hspace{0.3cm}{\ttfamily [private]}}
+
+Attribut de l\textquotesingle{}état de l\textquotesingle{}utilisateur 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00070}{70} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00005}{Controle()}, \hyperlink{controle_8cpp_source_l00033}{get\+Etat\+Sonnette()}, et \hyperlink{controle_8cpp_source_l00028}{set\+Etat\+Sonnette()}.
+
+\mbox{\Hypertarget{class_controle_a690595803de8f5c172b8bc46122ebb1a}\label{class_controle_a690595803de8f5c172b8bc46122ebb1a}} 
+\index{Controle@{Controle}!etat\+Utilisateur@{etat\+Utilisateur}}
+\index{etat\+Utilisateur@{etat\+Utilisateur}!Controle@{Controle}}
+\paragraph{\texorpdfstring{etat\+Utilisateur}{etatUtilisateur}}
+{\footnotesize\ttfamily int Controle\+::etat\+Utilisateur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Définition à la ligne \hyperlink{controle_8h_source_l00069}{69} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00023}{get\+Etat\+Utilisateur()}, et \hyperlink{controle_8cpp_source_l00018}{set\+Etat\+Utilisateur()}.
+
+\mbox{\Hypertarget{class_controle_af733c06309ce63fb9157073574e42b00}\label{class_controle_af733c06309ce63fb9157073574e42b00}} 
+\index{Controle@{Controle}!fonction@{fonction}}
+\index{fonction@{fonction}!Controle@{Controle}}
+\paragraph{\texorpdfstring{fonction}{fonction}}
+{\footnotesize\ttfamily Q\+String Controle\+::fonction\hspace{0.3cm}{\ttfamily [private]}}
+
+Attribut du prénom de l\textquotesingle{}utilisateur 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00075}{75} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00096}{get\+Fonction()}, et \hyperlink{controle_8cpp_source_l00092}{set\+Fonction()}.
+
+\mbox{\Hypertarget{class_controle_a6240fc19c937146243bcd950e5408481}\label{class_controle_a6240fc19c937146243bcd950e5408481}} 
+\index{Controle@{Controle}!message\+Personnalise@{message\+Personnalise}}
+\index{message\+Personnalise@{message\+Personnalise}!Controle@{Controle}}
+\paragraph{\texorpdfstring{message\+Personnalise}{messagePersonnalise}}
+{\footnotesize\ttfamily \hyperlink{class_message_personnalise}{Message\+Personnalise}$\ast$ Controle\+::message\+Personnalise\hspace{0.3cm}{\ttfamily [private]}}
+
+Objet servant à récuperer les trame du Bluetooth 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00028}{28} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+\mbox{\Hypertarget{class_controle_ad47747a49ca21434f6d43d451d3cf134}\label{class_controle_ad47747a49ca21434f6d43d451d3cf134}} 
+\index{Controle@{Controle}!nom@{nom}}
+\index{nom@{nom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Controle\+::nom\hspace{0.3cm}{\ttfamily [private]}}
+
+Attribut de l\textquotesingle{}état du capteur de présence 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00073}{73} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00080}{get\+Nom()}, et \hyperlink{controle_8cpp_source_l00075}{set\+Nom()}.
+
+\mbox{\Hypertarget{class_controle_a29e37e25a6fd4643ddea3fef47e3bc51}\label{class_controle_a29e37e25a6fd4643ddea3fef47e3bc51}} 
+\index{Controle@{Controle}!prenom@{prenom}}
+\index{prenom@{prenom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{prenom}{prenom}}
+{\footnotesize\ttfamily Q\+String Controle\+::prenom\hspace{0.3cm}{\ttfamily [private]}}
+
+Attribut du nom de l\textquotesingle{}utilisateur 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00074}{74} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00088}{get\+Prenom()}, et \hyperlink{controle_8cpp_source_l00084}{set\+Prenom()}.
+
+\mbox{\Hypertarget{class_controle_a089f74f48f24f09e7fc51b03a5ede79e}\label{class_controle_a089f74f48f24f09e7fc51b03a5ede79e}} 
+\index{Controle@{Controle}!presence@{presence}}
+\index{presence@{presence}!Controle@{Controle}}
+\paragraph{\texorpdfstring{presence}{presence}}
+{\footnotesize\ttfamily bool Controle\+::presence\hspace{0.3cm}{\ttfamily [private]}}
+
+Attribut de l\textquotesingle{}état de la sonnette 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00071}{71} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00043}{get\+Presence()}, et \hyperlink{controle_8cpp_source_l00038}{set\+Presence()}.
+
+\mbox{\Hypertarget{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}\label{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}} 
+\index{Controle@{Controle}!trame\+Affichage@{trame\+Affichage}}
+\index{trame\+Affichage@{trame\+Affichage}!Controle@{Controle}}
+\paragraph{\texorpdfstring{trame\+Affichage}{trameAffichage}}
+{\footnotesize\ttfamily Q\+String Controle\+::trame\+Affichage\hspace{0.3cm}{\ttfamily [private]}}
+
+Trame provenant de la liaison Bluetooth et à envoyer 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00032}{32} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+\mbox{\Hypertarget{class_controle_a5b9512ebbaf16746f55a9519de88f9be}\label{class_controle_a5b9512ebbaf16746f55a9519de88f9be}} 
+\index{Controle@{Controle}!trame\+Groom@{trame\+Groom}}
+\index{trame\+Groom@{trame\+Groom}!Controle@{Controle}}
+\paragraph{\texorpdfstring{trame\+Groom}{trameGroom}}
+{\footnotesize\ttfamily Q\+String Controle\+::trame\+Groom\hspace{0.3cm}{\ttfamily [private]}}
+
+L\textquotesingle{}interface utilisateur 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00031}{31} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+\mbox{\Hypertarget{class_controle_a5cb6dbeb8b2f066b1e757f3c933ea503}\label{class_controle_a5cb6dbeb8b2f066b1e757f3c933ea503}} 
+\index{Controle@{Controle}!trame\+Msg\+Perso@{trame\+Msg\+Perso}}
+\index{trame\+Msg\+Perso@{trame\+Msg\+Perso}!Controle@{Controle}}
+\paragraph{\texorpdfstring{trame\+Msg\+Perso}{trameMsgPerso}}
+{\footnotesize\ttfamily Q\+String Controle\+::trame\+Msg\+Perso\hspace{0.3cm}{\ttfamily [private]}}
+
+Trame à envoyer à la liaison série 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00033}{33} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+\mbox{\Hypertarget{class_controle_a2dd60c955396dd80426c1a74f56ea611}\label{class_controle_a2dd60c955396dd80426c1a74f56ea611}} 
+\index{Controle@{Controle}!ui@{ui}}
+\index{ui@{ui}!Controle@{Controle}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \hyperlink{class_ihm_groom}{Ihm\+Groom}$\ast$ Controle\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+Objet servant à récuperer les messages personnalisé 
+
+Définition à la ligne \hyperlink{controle_8h_source_l00029}{29} du fichier \hyperlink{controle_8h_source}{controle.\+h}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00101}{coder\+Trame\+Affichage()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{controle_8h}{controle.\+h}\item 
+\hyperlink{controle_8cpp}{controle.\+cpp}\end{DoxyCompactItemize}

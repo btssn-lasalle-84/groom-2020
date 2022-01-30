@@ -1,0 +1,61 @@
+\hypertarget{main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal Groom\+QT.  
+
+
+{\ttfamily \#include \char`\"{}ihmgroom.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_ae0665038b72011f5c680c660fcb59459}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Programme principal Groom\+QT. 
+
+Crée et affiche la fenêtre principale de l\textquotesingle{}application Groom\+QT
+
+\begin{DoxyAuthor}{Auteur}
+Etienne Valette 
+\end{DoxyAuthor}
+
+
+Définition dans le fichier \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8cpp_ae0665038b72011f5c680c660fcb59459}\label{main_8cpp_ae0665038b72011f5c680c660fcb59459}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+
+Définition à la ligne \hyperlink{main_8cpp_source_l00019}{19} du fichier \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+\begin{DoxyCode}
+00020 \{
+00021     QApplication a(argc, argv);
+00022     \hyperlink{class_ihm_groom}{IhmGroom} w;
+00023     w.show();
+00024 
+00025     \textcolor{keywordflow}{return} a.exec();
+00026 \}
+\end{DoxyCode}

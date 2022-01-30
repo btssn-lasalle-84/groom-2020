@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GrOOm:  Fichier source de communicationbluetooth.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="customdoxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone_groom.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GrOOm
+   &#160;<span id="projectnumber">0.2</span>
+   </div>
+   <div id="projectbrief">BTS SNIR LaSalle Avignon 2020</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('communicationbluetooth_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">communicationbluetooth.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="communicationbluetooth_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="communicationbluetooth_8h.html">communicationbluetooth.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;ui_communicationbluetooth.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_communication_bluetooth.html#a30f88d1710eb41d9c8c4b390b5c7b6f7">    4</a></span>&#160;<a class="code" href="class_communication_bluetooth.html#a30f88d1710eb41d9c8c4b390b5c7b6f7">CommunicationBluetooth::CommunicationBluetooth</a>(<a class="code" href="class_q_widget.html">QWidget</a> *parent) :</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="class_q_dialog.html">QDialog</a>(parent),</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    ui(new <a class="code" href="namespace_ui.html">Ui</a>::<a class="code" href="class_communication_bluetooth.html">CommunicationBluetooth</a>)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;     qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_communication_bluetooth.html#a2721cf9f9503a98770981ffdad09f9a1">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_communication_bluetooth.html#a13c72d24359f40c204e94f3ef1ab6fd3">   12</a></span>&#160;<a class="code" href="class_communication_bluetooth.html#a13c72d24359f40c204e94f3ef1ab6fd3">CommunicationBluetooth::~CommunicationBluetooth</a>()</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_communication_bluetooth.html#a2721cf9f9503a98770981ffdad09f9a1">ui</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div><div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="bdd_8h_source.html#l00006">bdd.h:6</a></div></div>
+<div class="ttc" id="class_communication_bluetooth_html_a30f88d1710eb41d9c8c4b390b5c7b6f7"><div class="ttname"><a href="class_communication_bluetooth.html#a30f88d1710eb41d9c8c4b390b5c7b6f7">CommunicationBluetooth::CommunicationBluetooth</a></div><div class="ttdeci">CommunicationBluetooth(QWidget *parent=nullptr)</div><div class="ttdoc">Constructeur classe CommunicationBluetooth. </div><div class="ttdef"><b>Definition:</b> <a href="communicationbluetooth_8cpp_source.html#l00004">communicationbluetooth.cpp:4</a></div></div>
+<div class="ttc" id="class_communication_bluetooth_html_a2721cf9f9503a98770981ffdad09f9a1"><div class="ttname"><a href="class_communication_bluetooth.html#a2721cf9f9503a98770981ffdad09f9a1">CommunicationBluetooth::ui</a></div><div class="ttdeci">Ui::CommunicationBluetooth * ui</div><div class="ttdef"><b>Definition:</b> <a href="communicationbluetooth_8h_source.html#l00038">communicationbluetooth.h:38</a></div></div>
+<div class="ttc" id="communicationbluetooth_8h_html"><div class="ttname"><a href="communicationbluetooth_8h.html">communicationbluetooth.h</a></div></div>
+<div class="ttc" id="class_communication_bluetooth_html"><div class="ttname"><a href="class_communication_bluetooth.html">CommunicationBluetooth</a></div><div class="ttdoc">Class permettant de mettre en place une communication bluetooth. </div><div class="ttdef"><b>Definition:</b> <a href="communicationbluetooth_8h_source.html#l00017">communicationbluetooth.h:17</a></div></div>
+<div class="ttc" id="class_q_dialog_html"><div class="ttname"><a href="class_q_dialog.html">QDialog</a></div></div>
+<div class="ttc" id="class_q_widget_html"><div class="ttname"><a href="class_q_widget.html">QWidget</a></div></div>
+<div class="ttc" id="class_communication_bluetooth_html_a13c72d24359f40c204e94f3ef1ab6fd3"><div class="ttname"><a href="class_communication_bluetooth.html#a13c72d24359f40c204e94f3ef1ab6fd3">CommunicationBluetooth::~CommunicationBluetooth</a></div><div class="ttdeci">~CommunicationBluetooth()</div><div class="ttdoc">Destructeur classe CommunicationBluetooth. </div><div class="ttdef"><b>Definition:</b> <a href="communicationbluetooth_8cpp_source.html#l00012">communicationbluetooth.cpp:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+<!--Généré le Mardi 7 Avril 2020 20:03:50 pour GrOOm par &#160;<a href="http://www.doxygen.org/index.html">-->
+<img class="footer" src="lasalle-logo.png" alt="La Salle Avignon"/>
+<b>Campus La Salle Avignon</b> - 9 Rue Notre Dame des 7 douleurs - BP 50165 - 84008 Avignon
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

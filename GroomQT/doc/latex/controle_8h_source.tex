@@ -1,0 +1,66 @@
+\hypertarget{controle_8h_source}{}\subsection{controle.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CONTROLE\_H}
+00002 \textcolor{preprocessor}{#define CONTROLE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QDateTime>}
+00006 \textcolor{preprocessor}{#include <QString>}
+00007 \textcolor{preprocessor}{#include "\hyperlink{communicationbluetooth_8h}{communicationbluetooth.h}"}
+00008 \textcolor{preprocessor}{#include "\hyperlink{ihmgroom_8h}{ihmgroom.h}"}
+00009 \textcolor{preprocessor}{#include "\hyperlink{messagepersonnalise_8h}{messagepersonnalise.h}"}
+00010 
+00017 \textcolor{keyword}{class }\hyperlink{class_ihm_groom}{IhmGroom};
+00018 \textcolor{keyword}{class }\hyperlink{class_communication_bluetooth}{CommunicationBluetooth};
+00019 \textcolor{keyword}{class }\hyperlink{class_message_personnalise}{MessagePersonnalise};
+00020 
+00021 
+\Hypertarget{controle_8h_source_l00022}\hyperlink{class_controle}{00022} \textcolor{keyword}{class }\hyperlink{class_controle}{Controle} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00023 \{
+00024     Q\_OBJECT
+00025 
+00026     \textcolor{keyword}{private}:
+\Hypertarget{controle_8h_source_l00027}\hyperlink{class_controle_a5d818564000173732472eb9ac20e53aa}{00027}         \hyperlink{class_communication_bluetooth}{CommunicationBluetooth} *\hyperlink{class_controle_a5d818564000173732472eb9ac20e53aa}{communicationBluetooth};     
+\Hypertarget{controle_8h_source_l00028}\hyperlink{class_controle_a6240fc19c937146243bcd950e5408481}{00028}         \hyperlink{class_message_personnalise}{MessagePersonnalise} *\hyperlink{class_controle_a6240fc19c937146243bcd950e5408481}{messagePersonnalise};           
+\Hypertarget{controle_8h_source_l00029}\hyperlink{class_controle_a2dd60c955396dd80426c1a74f56ea611}{00029}         \hyperlink{class_ihm_groom}{IhmGroom} *\hyperlink{class_controle_a2dd60c955396dd80426c1a74f56ea611}{ui};                                       
+\Hypertarget{controle_8h_source_l00031}\hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{00031}         QString \hyperlink{class_controle_a5b9512ebbaf16746f55a9519de88f9be}{trameGroom};                                 
+\Hypertarget{controle_8h_source_l00032}\hyperlink{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}{00032}         QString \hyperlink{class_controle_a0bbdd7a0c44fbbc45bf3a381872fcfbe}{trameAffichage};                             
+\Hypertarget{controle_8h_source_l00033}\hyperlink{class_controle_a5cb6dbeb8b2f066b1e757f3c933ea503}{00033}         QString \hyperlink{class_controle_a5cb6dbeb8b2f066b1e757f3c933ea503}{trameMsgPerso};                              
+00042         \textcolor{keywordtype}{bool} \hyperlink{class_controle_a4f40023a18e4e656282a15d5657e0a25}{verifierChecksum}(QString trameGroom);
+00048         \textcolor{keywordtype}{void} \hyperlink{class_controle_a2dcdd01e67e6ce8769188d62ce0c262a}{decoderTrameGroom}(QString trameGroom);
+00054         \textcolor{keywordtype}{void} \hyperlink{class_controle_a9ba8efd42493ffd4288537a1ace4e220}{coderTrameGroom}(QString trameGroom);
+00060         \textcolor{keywordtype}{void} \hyperlink{class_controle_a316808279226b01ac8fe51ab396b1b67}{coderTrameAffichage}(QString trameAffichage);
+00066         \textcolor{keywordtype}{void} \hyperlink{class_controle_a77d635484c2e6fca851d40e76f422fce}{coderTrameMsgPerso}(QString trameMsgPerso);
+00067 
+00068 
+\Hypertarget{controle_8h_source_l00069}\hyperlink{class_controle_a690595803de8f5c172b8bc46122ebb1a}{00069}         \textcolor{keywordtype}{int} \hyperlink{class_controle_a690595803de8f5c172b8bc46122ebb1a}{etatUtilisateur};                                
+\Hypertarget{controle_8h_source_l00070}\hyperlink{class_controle_afddf1dce812ff88577e308684b564f33}{00070}         \textcolor{keywordtype}{bool} \hyperlink{class_controle_afddf1dce812ff88577e308684b564f33}{etatSonnette};                                  
+\Hypertarget{controle_8h_source_l00071}\hyperlink{class_controle_a089f74f48f24f09e7fc51b03a5ede79e}{00071}         \textcolor{keywordtype}{bool} \hyperlink{class_controle_a089f74f48f24f09e7fc51b03a5ede79e}{presence};                                      
+\Hypertarget{controle_8h_source_l00073}\hyperlink{class_controle_ad47747a49ca21434f6d43d451d3cf134}{00073}         QString \hyperlink{class_controle_ad47747a49ca21434f6d43d451d3cf134}{nom};                                        
+\Hypertarget{controle_8h_source_l00074}\hyperlink{class_controle_a29e37e25a6fd4643ddea3fef47e3bc51}{00074}         QString \hyperlink{class_controle_a29e37e25a6fd4643ddea3fef47e3bc51}{prenom};                                     
+\Hypertarget{controle_8h_source_l00075}\hyperlink{class_controle_af733c06309ce63fb9157073574e42b00}{00075}         QString \hyperlink{class_controle_af733c06309ce63fb9157073574e42b00}{fonction};                                   
+00079     \textcolor{keyword}{public}:
+00086         \hyperlink{class_controle_af64a33acc664bf02f2ea0b4f27f781e6}{Controle}(\hyperlink{class_q_object}{QObject} *parent = \textcolor{keyword}{nullptr});
+00093         \hyperlink{class_controle_a98f5d2630efbdb5f469cbb2675725b20}{~Controle}();
+00100         \textcolor{keywordtype}{void} \hyperlink{class_controle_ac706c5e9ede46dab70631281b084e233}{setEtatSonnette}(\textcolor{keywordtype}{bool} newEtatSonnette);
+00107         \textcolor{keywordtype}{bool} \hyperlink{class_controle_acabf3768430c7f1acb268ca0fa1ddf99}{getEtatSonnette}();
+00114         \textcolor{keywordtype}{void} \hyperlink{class_controle_a62db54114d126d03dd332332b3942320}{setEtatUtilisateur}(\textcolor{keywordtype}{int} newEtatUtilisateur);
+00121         \textcolor{keywordtype}{int} \hyperlink{class_controle_ac3bd8e8621cee56d4343e21a624e1c48}{getEtatUtilisateur}();
+00128         \textcolor{keywordtype}{void} \hyperlink{class_controle_a65904fe693663759a4cde4e4d66e36e8}{setPresence}(\textcolor{keywordtype}{bool} newPresence);
+00135         \textcolor{keywordtype}{bool} \hyperlink{class_controle_abf7c9fefec4980b90c9f759d48fd17aa}{getPresence}();
+00136 
+00143         \textcolor{keywordtype}{void} \hyperlink{class_controle_a0f731cdb733053f7be24e7042611601c}{setNom}(QString newNom);
+00150         QString \hyperlink{class_controle_ac6e8590a5108e97fce3ce3aa43feb881}{getNom}();
+00157         \textcolor{keywordtype}{void} \hyperlink{class_controle_ab046adc050872b4034c1500eb2e1b728}{setPrenom}(QString newPrenom);
+00164         QString \hyperlink{class_controle_a0164fd9066b1703498576095ab5642c5}{getPrenom}();
+00171         \textcolor{keywordtype}{void} \hyperlink{class_controle_abe472f4fd197c0fc679539e0b75a6e15}{setFonction}(QString newFonction);
+00178         QString \hyperlink{class_controle_a8d2891b2b01c503d10f775b4b14a3777}{getFonction}();
+00179 
+00180 
+00181     \textcolor{keyword}{public} slots:
+00182 
+00183 \};
+00184 
+00185 \textcolor{preprocessor}{#endif // CONTROLE\_H}
+\end{DoxyCode}

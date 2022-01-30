@@ -1,0 +1,129 @@
+\hypertarget{class_message_personnalise}{}\subsection{Référence de la classe Message\+Personnalise}
+\label{class_message_personnalise}\index{Message\+Personnalise@{Message\+Personnalise}}
+
+
+Classe permetant de personnalisé son message.  
+
+
+
+
+{\ttfamily \#include \char`\"{}messagepersonnalise.\+h\char`\"{}}
+
+
+
+Graphe de collaboration de Message\+Personnalise\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_message_personnalise__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_message_personnalise_ac36a9573287d1119566790a4fad25dbc}{Message\+Personnalise} (\hyperlink{class_q_widget}{Q\+Widget} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_message_personnalise}{Message\+Personnalise}. \end{DoxyCompactList}\item 
+\hyperlink{class_message_personnalise_aff9181649ac956114f02660582e86cfc}{$\sim$\+Message\+Personnalise} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_message_personnalise}{Message\+Personnalise}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Message\+Personnalise $\ast$ \hyperlink{class_message_personnalise_a94bdf252f3e858ec1c2ed354d31a91e3}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Classe permetant de personnalisé son message. 
+
+Définition à la ligne \hyperlink{messagepersonnalise_8h_source_l00016}{16} du fichier \hyperlink{messagepersonnalise_8h_source}{messagepersonnalise.\+h}.
+
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_message_personnalise_ac36a9573287d1119566790a4fad25dbc}\label{class_message_personnalise_ac36a9573287d1119566790a4fad25dbc}} 
+\index{Message\+Personnalise@{Message\+Personnalise}!Message\+Personnalise@{Message\+Personnalise}}
+\index{Message\+Personnalise@{Message\+Personnalise}!Message\+Personnalise@{Message\+Personnalise}}
+\paragraph{\texorpdfstring{Message\+Personnalise()}{MessagePersonnalise()}}
+{\footnotesize\ttfamily Message\+Personnalise\+::\+Message\+Personnalise (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_widget}{Q\+Widget} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructeur de la classe \hyperlink{class_message_personnalise}{Message\+Personnalise}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{messagepersonnalise_8cpp_source_l00004}{4} du fichier \hyperlink{messagepersonnalise_8cpp_source}{messagepersonnalise.\+cpp}.
+
+
+
+Références \hyperlink{messagepersonnalise_8h_source_l00037}{ui}.
+
+
+\begin{DoxyCode}
+00004                                                         :
+00005     \hyperlink{class_q_dialog}{QDialog}(parent),
+00006     \hyperlink{class_message_personnalise_a94bdf252f3e858ec1c2ed354d31a91e3}{ui}(\textcolor{keyword}{new} Ui::MessagePersonnalise)
+00007 \{
+00008      qDebug() << Q\_FUNC\_INFO;
+00009     \hyperlink{class_message_personnalise_a94bdf252f3e858ec1c2ed354d31a91e3}{ui}->setupUi(\textcolor{keyword}{this});
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_message_personnalise_aff9181649ac956114f02660582e86cfc}\label{class_message_personnalise_aff9181649ac956114f02660582e86cfc}} 
+\index{Message\+Personnalise@{Message\+Personnalise}!````~Message\+Personnalise@{$\sim$\+Message\+Personnalise}}
+\index{````~Message\+Personnalise@{$\sim$\+Message\+Personnalise}!Message\+Personnalise@{Message\+Personnalise}}
+\paragraph{\texorpdfstring{$\sim$\+Message\+Personnalise()}{~MessagePersonnalise()}}
+{\footnotesize\ttfamily Message\+Personnalise\+::$\sim$\+Message\+Personnalise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \hyperlink{class_message_personnalise}{Message\+Personnalise}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{messagepersonnalise_8cpp_source_l00012}{12} du fichier \hyperlink{messagepersonnalise_8cpp_source}{messagepersonnalise.\+cpp}.
+
+
+
+Références \hyperlink{messagepersonnalise_8h_source_l00037}{ui}.
+
+
+\begin{DoxyCode}
+00013 \{
+00014     \textcolor{keyword}{delete} \hyperlink{class_message_personnalise_a94bdf252f3e858ec1c2ed354d31a91e3}{ui};
+00015     qDebug() << Q\_FUNC\_INFO;
+00016 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_message_personnalise_a94bdf252f3e858ec1c2ed354d31a91e3}\label{class_message_personnalise_a94bdf252f3e858ec1c2ed354d31a91e3}} 
+\index{Message\+Personnalise@{Message\+Personnalise}!ui@{ui}}
+\index{ui@{ui}!Message\+Personnalise@{Message\+Personnalise}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Message\+Personnalise$\ast$ Message\+Personnalise\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Définition à la ligne \hyperlink{messagepersonnalise_8h_source_l00037}{37} du fichier \hyperlink{messagepersonnalise_8h_source}{messagepersonnalise.\+h}.
+
+
+
+Référencé par \hyperlink{messagepersonnalise_8cpp_source_l00004}{Message\+Personnalise()}, et \hyperlink{messagepersonnalise_8cpp_source_l00012}{$\sim$\+Message\+Personnalise()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{messagepersonnalise_8h}{messagepersonnalise.\+h}\item 
+\hyperlink{messagepersonnalise_8cpp}{messagepersonnalise.\+cpp}\end{DoxyCompactItemize}

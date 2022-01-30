@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">groom</string>
+    <string name="messageEntrez">Entrez</string>
+    <string name="messagePerso">Message personnalisé</string>
+    <string name="perso">Perso</string>
+    <string name="entrer">Entrer</string>
+    <string name="libre">Libre</string>
+    <string name="absent">Absent</string>
+    <string name="occupe">Occupé</string>
+    <string name="activerSonnette">Activer Sonnette</string>
+    <string name="desactiverSonnette">Désactiver Sonnette</string>
+    <string name="choisissez_votre_disponibilite">GrOOm</string>
+    <string name="groom">Sélectionner un portier GrOOm : </string>
+    <string name="connexion">Connexion</string>
+    <string name="connectionAppareilGroom">GrOOm</string>
+    <string name="deconnexion">Déconnexion</string>
+    <string name="votreDisponibiliteActuelle">Votre disponibilité actuelle :</string>
+</resources>

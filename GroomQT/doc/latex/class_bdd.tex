@@ -1,0 +1,104 @@
+\hypertarget{class_bdd}{}\subsection{Référence de la classe Bdd}
+\label{class_bdd}\index{Bdd@{Bdd}}
+
+
+{\ttfamily \#include $<$bdd.\+h$>$}
+
+
+
+Graphe de collaboration de Bdd\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{class_bdd__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bdd_a9b439e0eaab93fcea818892e1daf809b}{Bdd} (\hyperlink{class_q_widget}{Q\+Widget} $\ast$parent=nullptr)
+\item 
+\hyperlink{class_bdd_a5029277f27f8cfcf9d8603fb331a15dd}{$\sim$\+Bdd} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Bdd $\ast$ \hyperlink{class_bdd_a7d9f43a44caaddb2f5ccd728ecc78c2a}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+
+
+Définition à la ligne \hyperlink{bdd_8h_source_l00010}{10} du fichier \hyperlink{bdd_8h_source}{bdd.\+h}.
+
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_bdd_a9b439e0eaab93fcea818892e1daf809b}\label{class_bdd_a9b439e0eaab93fcea818892e1daf809b}} 
+\index{Bdd@{Bdd}!Bdd@{Bdd}}
+\index{Bdd@{Bdd}!Bdd@{Bdd}}
+\paragraph{\texorpdfstring{Bdd()}{Bdd()}}
+{\footnotesize\ttfamily Bdd\+::\+Bdd (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_widget}{Q\+Widget} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Définition à la ligne \hyperlink{bdd_8cpp_source_l00004}{4} du fichier \hyperlink{bdd_8cpp_source}{bdd.\+cpp}.
+
+
+
+Références \hyperlink{bdd_8h_source_l00019}{ui}.
+
+
+\begin{DoxyCode}
+00004                         :
+00005     \hyperlink{class_q_dialog}{QDialog}(parent),
+00006     \hyperlink{class_bdd_a7d9f43a44caaddb2f5ccd728ecc78c2a}{ui}(\textcolor{keyword}{new} Ui::Bdd)
+00007 \{
+00008     \hyperlink{class_bdd_a7d9f43a44caaddb2f5ccd728ecc78c2a}{ui}->setupUi(\textcolor{keyword}{this});
+00009 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bdd_a5029277f27f8cfcf9d8603fb331a15dd}\label{class_bdd_a5029277f27f8cfcf9d8603fb331a15dd}} 
+\index{Bdd@{Bdd}!````~Bdd@{$\sim$\+Bdd}}
+\index{````~Bdd@{$\sim$\+Bdd}!Bdd@{Bdd}}
+\paragraph{\texorpdfstring{$\sim$\+Bdd()}{~Bdd()}}
+{\footnotesize\ttfamily Bdd\+::$\sim$\+Bdd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne \hyperlink{bdd_8cpp_source_l00011}{11} du fichier \hyperlink{bdd_8cpp_source}{bdd.\+cpp}.
+
+
+
+Références \hyperlink{bdd_8h_source_l00019}{ui}.
+
+
+\begin{DoxyCode}
+00012 \{
+00013     \textcolor{keyword}{delete} \hyperlink{class_bdd_a7d9f43a44caaddb2f5ccd728ecc78c2a}{ui};
+00014 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_bdd_a7d9f43a44caaddb2f5ccd728ecc78c2a}\label{class_bdd_a7d9f43a44caaddb2f5ccd728ecc78c2a}} 
+\index{Bdd@{Bdd}!ui@{ui}}
+\index{ui@{ui}!Bdd@{Bdd}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Bdd$\ast$ Bdd\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Définition à la ligne \hyperlink{bdd_8h_source_l00019}{19} du fichier \hyperlink{bdd_8h_source}{bdd.\+h}.
+
+
+
+Référencé par \hyperlink{bdd_8cpp_source_l00004}{Bdd()}, et \hyperlink{bdd_8cpp_source_l00011}{$\sim$\+Bdd()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bdd_8h}{bdd.\+h}\item 
+\hyperlink{bdd_8cpp}{bdd.\+cpp}\end{DoxyCompactItemize}

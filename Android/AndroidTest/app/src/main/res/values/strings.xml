@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="ceci_est_une_application_de_test">Ceci est une application de test</string>
+    <string name="appuyez">Appuyez</string>
+    <string name="appuyez_ici">Appuyez ici!</string>
+    <string name="bienvenue_sur_l_application_de_d_couverter">Bienvenue sur l\'application de découverter!</string>
+    <string name="sa_marche_j_en_suis_sur">Sa marche j\'en suis sur</string>
+    <string name="yes_yes_yes">YES YES YES</string>
+</resources>

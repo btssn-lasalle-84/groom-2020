@@ -1,0 +1,19 @@
+\hypertarget{importation_8cpp_source}{}\subsection{importation.\+cpp}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include "\hyperlink{importation_8h}{importation.h}"}
+00002 \textcolor{preprocessor}{#include "ui\_importation.h"}
+00003 
+\Hypertarget{importation_8cpp_source_l00004}\hyperlink{class_importation_ad3a625fb90d559ff048151a4cb4646b4}{00004} \hyperlink{class_importation_ad3a625fb90d559ff048151a4cb4646b4}{Importation::Importation}(\hyperlink{class_q_widget}{QWidget} *parent) : 
+      \hyperlink{class_q_dialog}{QDialog}(parent), ui(new \hyperlink{namespace_ui}{Ui}::\hyperlink{class_importation}{Importation})
+00005 \{
+00006      qDebug() << Q\_FUNC\_INFO;
+00007     \hyperlink{class_importation_ace5d522c27957bac47fd8d3234af1d2e}{ui}->setupUi(\textcolor{keyword}{this});
+00008 \}
+00009 
+\Hypertarget{importation_8cpp_source_l00010}\hyperlink{class_importation_ac9f6f0a390369d5732576fb38a8e62c7}{00010} \hyperlink{class_importation_ac9f6f0a390369d5732576fb38a8e62c7}{Importation::~Importation}()
+00011 \{
+00012     \textcolor{keyword}{delete} \hyperlink{class_importation_ace5d522c27957bac47fd8d3234af1d2e}{ui};
+00013     qDebug() << Q\_FUNC\_INFO;
+00014 \}
+\end{DoxyCode}

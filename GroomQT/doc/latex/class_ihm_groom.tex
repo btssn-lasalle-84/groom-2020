@@ -1,0 +1,913 @@
+\hypertarget{class_ihm_groom}{}\subsection{Référence de la classe Ihm\+Groom}
+\label{class_ihm_groom}\index{Ihm\+Groom@{Ihm\+Groom}}
+
+
+Déclaration de la classe \hyperlink{class_ihm_groom}{Ihm\+Groom}.  
+
+
+
+
+{\ttfamily \#include $<$ihmgroom.\+h$>$}
+
+
+
+Graphe de collaboration de Ihm\+Groom\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ihm_groom__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_groom_a428ffaecbab91abb0824ad61afd3109e}{acquitter\+Notification} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui permet d\textquotesingle{}acquitter une notification. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_a55194db52eca3648aad391274a6bb709}{afficher\+Notification} (Q\+String titre, Q\+String message, int duree=1000)
+\begin{DoxyCompactList}\small\item\em Méthode qui permet d\textquotesingle{}afficher une notification système. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_afc6c48489b270b22a660e32668d6b2ca}{changement\+Fonction} ()
+\begin{DoxyCompactList}\small\item\em change la focntion sur l\textquotesingle{}ihm \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_aa270d1fb6a7a9c1385c4ae3e67451ea0}{changement\+Nom} ()
+\begin{DoxyCompactList}\small\item\em change le nom sur l\textquotesingle{}ihm \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_a2e8db190224f15326552a5bd642a9347}{changement\+Prenom} ()
+\begin{DoxyCompactList}\small\item\em change le prenom sur l\textquotesingle{}ihm \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_a6a7d6102f1d90172215fd4f1aae6e166}{inversion\+Image\+Sonnette} ()
+\begin{DoxyCompactList}\small\item\em Inverse l\textquotesingle{}image de la sonnette. \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_a53838a4bd054fe5c85c23eced3eacc8b}{tester\+Notification} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ihm_groom_a44887622008d41828025e2b2ccd598a7}{Ihm\+Groom} (\hyperlink{class_q_widget}{Q\+Widget} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_ihm_groom}{Ihm\+Groom}. \end{DoxyCompactList}\item 
+\hyperlink{class_ihm_groom_a89f5e00d9a36d7162da874b2290274e0}{$\sim$\+Ihm\+Groom} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_ihm_groom}{Ihm\+Groom}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_groom_a8063930f323ce85b679c7598742f325d}{close\+Event} (Q\+Close\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Méthode redéfinie qui est appelée automatiquement lors d\textquotesingle{}une demande de fermeture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_groom_adc890fcb2368c7bf7654d8ed4af4912a}{on\+\_\+push\+Button\+\_\+2\+\_\+clicked} ()
+\item 
+void \hyperlink{class_ihm_groom_a1d981f0754a5fa2b01036fc5125fded2}{on\+\_\+push\+Button\+\_\+3\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em change l\textquotesingle{}état de la personne en Libre \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_addb07bf87d4d6f7eb5604d742a6bf2ef}{on\+\_\+push\+Button\+\_\+4\+\_\+clicked} ()
+\item 
+void \hyperlink{class_ihm_groom_a1bbde232f2fb38daedaa4562dfc8d1b5}{on\+\_\+push\+Button\+\_\+6\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em affiche l\textquotesingle{}ihm communication bluetooth \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_ac69005aef7c31e888d64890eb45c5e64}{on\+\_\+push\+Button\+\_\+8\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em affiche l\textquotesingle{}ihm importation \end{DoxyCompactList}\item 
+void \hyperlink{class_ihm_groom_a5f8398886e8daa04d5a0f3119f307f14}{on\+\_\+push\+Button\+\_\+9\+\_\+clicked} ()
+\item 
+void \hyperlink{class_ihm_groom_ad3fbc13397279793b240d54b5a5f20b4}{on\+\_\+push\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em affiche l\textquotesingle{}ihm Message personnalisé \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ihm_groom_addfe25c3da6ddecfbdcb5b3cf062d724}{initialiser\+Icone\+Systeme} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui permet à l\textquotesingle{}application de s\textquotesingle{}intaller dans la barre système. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Action $\ast$ \hyperlink{class_ihm_groom_aa23dc46d5e223aa20bb84b5bd99d3b81}{action\+Maximiser}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}action maximiser l\textquotesingle{}application. \end{DoxyCompactList}\item 
+Q\+Action $\ast$ \hyperlink{class_ihm_groom_a4018ccf7f73329725e4c54002ae72f01}{action\+Minimiser}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}action minimiser l\textquotesingle{}application. \end{DoxyCompactList}\item 
+Q\+Action $\ast$ \hyperlink{class_ihm_groom_ab28c091688d25e93b2baf99b4aa90f07}{action\+Quitter}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}action quitter l\textquotesingle{}application. \end{DoxyCompactList}\item 
+Q\+Action $\ast$ \hyperlink{class_ihm_groom_aa2df6badfa16f802411b502228fb8704}{action\+Restaurer}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}action restaurer l\textquotesingle{}application. \end{DoxyCompactList}\item 
+\hyperlink{class_bdd}{Bdd} $\ast$ \hyperlink{class_ihm_groom_aba1bfff9bc610e6a626d3af4cec266f9}{bdd}
+\item 
+\hyperlink{class_communication_bluetooth}{Communication\+Bluetooth} $\ast$ \hyperlink{class_ihm_groom_a8e2b551df75d8dffdfbc9beb6c3691ba}{communication\+Bluetooth}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}interface de la Configuration. \end{DoxyCompactList}\item 
+\hyperlink{class_controle}{Controle} $\ast$ \hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}
+\item 
+bool \hyperlink{class_ihm_groom_a95d2d2b4b3b849c1b21f234844fca056}{etat\+Initial\+Icone\+Systeme}
+\begin{DoxyCompactList}\small\item\em Booléen indiquant si c\textquotesingle{}est la première demande Quitter. \end{DoxyCompactList}\item 
+Q\+System\+Tray\+Icon $\ast$ \hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{icone\+Systeme}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}icône de l\textquotesingle{}application pour la barre système. \end{DoxyCompactList}\item 
+\hyperlink{class_importation}{Importation} $\ast$ \hyperlink{class_ihm_groom_ab3f9d16d3e20234a71b1580d70ee4959}{ihm\+Importation}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}interface de l\textquotesingle{}\hyperlink{class_importation}{Importation}. \end{DoxyCompactList}\item 
+Q\+Menu $\ast$ \hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menu\+Icone\+Systeme}
+\begin{DoxyCompactList}\small\item\em Le menu de l\textquotesingle{}application. \end{DoxyCompactList}\item 
+\hyperlink{class_message_personnalise}{Message\+Personnalise} $\ast$ \hyperlink{class_ihm_groom_a529729b93d7b8d17147d3b47fe9a274d}{message\+Personnalise}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}interface du Message Personnalisé \end{DoxyCompactList}\item 
+Ui\+::\+Ihm\+Groom $\ast$ \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}interface utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Déclaration de la classe \hyperlink{class_ihm_groom}{Ihm\+Groom}. 
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00054}{54} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_ihm_groom_a44887622008d41828025e2b2ccd598a7}\label{class_ihm_groom_a44887622008d41828025e2b2ccd598a7}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!Ihm\+Groom@{Ihm\+Groom}}
+\index{Ihm\+Groom@{Ihm\+Groom}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{Ihm\+Groom()}{IhmGroom()}}
+{\footnotesize\ttfamily Ihm\+Groom\+::\+Ihm\+Groom (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_widget}{Q\+Widget} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructeur de la classe \hyperlink{class_ihm_groom}{Ihm\+Groom}. 
+
+Constructeur classe \hyperlink{class_ihm_groom}{Ihm\+Groom}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & L\textquotesingle{}objet parent Qt (0 = fenêtre principale)\\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000001}{A faire}]Renommer les widgets \end{DoxyRefDesc}
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00031}{31} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00090}{bdd}, \hyperlink{ihmgroom_8h_source_l00086}{communication\+Bluetooth}, \hyperlink{ihmgroom_8h_source_l00089}{controle}, \hyperlink{ihmgroom_8h_source_l00087}{ihm\+Importation}, \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}, \hyperlink{ihmgroom_8cpp_source_l00201}{inversion\+Image\+Sonnette()}, \hyperlink{ihmgroom_8h_source_l00088}{message\+Personnalise}, \hyperlink{ihmgroom_8h_source_l00018}{N\+O\+M\+\_\+\+A\+PP}, \hyperlink{ihmgroom_8cpp_source_l00175}{tester\+Notification()}, et \hyperlink{ihmgroom_8h_source_l00085}{ui}.
+
+
+\begin{DoxyCode}
+00031                                   : \hyperlink{class_q_widget}{QWidget}(parent), \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}(\textcolor{keyword}{new} Ui::IhmGroom)
+00032 \{
+00033     qDebug() << Q\_FUNC\_INFO;
+00034     \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->setupUi(\textcolor{keyword}{this});
+00035     setWindowTitle(\hyperlink{ihmgroom_8h_ada54de88f03c1264af632974a72cff76}{NOM\_APP});
+00036 
+00037     \hyperlink{class_ihm_groom_ab3f9d16d3e20234a71b1580d70ee4959}{ihmImportation} = \textcolor{keyword}{new} \hyperlink{class_importation}{Importation}(\textcolor{keyword}{this});
+00038     \hyperlink{class_ihm_groom_a529729b93d7b8d17147d3b47fe9a274d}{messagePersonnalise} = \textcolor{keyword}{new} \hyperlink{class_message_personnalise}{MessagePersonnalise}(\textcolor{keyword}{this});
+00039     \hyperlink{class_ihm_groom_a8e2b551df75d8dffdfbc9beb6c3691ba}{communicationBluetooth} = \textcolor{keyword}{new} \hyperlink{class_communication_bluetooth}{CommunicationBluetooth}(\textcolor{keyword}{this});
+00040     \hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle} = \textcolor{keyword}{new} \hyperlink{class_controle}{Controle}(\textcolor{keyword}{this});
+00041     \hyperlink{class_ihm_groom_aba1bfff9bc610e6a626d3af4cec266f9}{bdd} = \textcolor{keyword}{new} \hyperlink{class_bdd}{Bdd}(\textcolor{keyword}{this});
+00042 
+00043     \hyperlink{class_ihm_groom_addfe25c3da6ddecfbdcb5b3cf062d724}{initialiserIconeSysteme}();
+00044     connect(\hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->pushButton\_5, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_groom_a6a7d6102f1d90172215fd4f1aae6e166}{inversionImageSonnette}()));
+00048     \textcolor{comment}{// Test :}
+00049     connect(\hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->pushButton\_7, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ihm_groom_a53838a4bd054fe5c85c23eced3eacc8b}{testerNotification}()));
+00050     connect(\hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->pushButton\_6, SIGNAL(clicked()), \textcolor{keyword}{this}, SLOT(afficherIhmConfiguration()));
+00051 
+00052 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a89f5e00d9a36d7162da874b2290274e0}\label{class_ihm_groom_a89f5e00d9a36d7162da874b2290274e0}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!````~Ihm\+Groom@{$\sim$\+Ihm\+Groom}}
+\index{````~Ihm\+Groom@{$\sim$\+Ihm\+Groom}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{$\sim$\+Ihm\+Groom()}{~IhmGroom()}}
+{\footnotesize\ttfamily Ihm\+Groom\+::$\sim$\+Ihm\+Groom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \hyperlink{class_ihm_groom}{Ihm\+Groom}. 
+
+Constructeur classe $\sim$\+Ihm\+Groom.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00059}{59} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00085}{ui}.
+
+
+\begin{DoxyCode}
+00060 \{
+00061     \textcolor{keyword}{delete} \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui};
+00062      qDebug() << Q\_FUNC\_INFO;
+00063 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_ihm_groom_a428ffaecbab91abb0824ad61afd3109e}\label{class_ihm_groom_a428ffaecbab91abb0824ad61afd3109e}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!acquitter\+Notification@{acquitter\+Notification}}
+\index{acquitter\+Notification@{acquitter\+Notification}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{acquitter\+Notification}{acquitterNotification}}
+{\footnotesize\ttfamily Ihm\+Groom\+::acquitter\+Notification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Méthode qui permet d\textquotesingle{}acquitter une notification. 
+
+Acquitter les notification. 
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00170}{170} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+
+\begin{DoxyCode}
+00171 \{
+00172     qDebug() << Q\_FUNC\_INFO;
+00173 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a55194db52eca3648aad391274a6bb709}\label{class_ihm_groom_a55194db52eca3648aad391274a6bb709}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!afficher\+Notification@{afficher\+Notification}}
+\index{afficher\+Notification@{afficher\+Notification}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{afficher\+Notification}{afficherNotification}}
+{\footnotesize\ttfamily Ihm\+Groom\+::afficher\+Notification (\begin{DoxyParamCaption}\item[{Q\+String}]{titre,  }\item[{Q\+String}]{message,  }\item[{int}]{duree = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Méthode qui permet d\textquotesingle{}afficher une notification système. 
+
+Affichage des notification.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em titre} & Le titre de la notification \\
+\hline
+{\em message} & Le message de la notification \\
+\hline
+{\em duree} & La durée en millisecondes de la notification (par défaut 5s) \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00151}{151} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00093}{icone\+Systeme}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00175}{tester\+Notification()}.
+
+
+\begin{DoxyCode}
+00152 \{
+00153     QIcon icone(\textcolor{stringliteral}{":/groom.png"});
+00154     \hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme}->showMessage(titre, message, icone, duree); \textcolor{comment}{// duree en ms}
+00155     \textcolor{comment}{/*}
+00156 \textcolor{comment}{    QSystemTrayIcon::NoIcon}
+00157 \textcolor{comment}{    QSystemTrayIcon::Information}
+00158 \textcolor{comment}{    QSystemTrayIcon::Warning}
+00159 \textcolor{comment}{    QSystemTrayIcon::Critical}
+00160 \textcolor{comment}{    */}
+00161     \textcolor{comment}{//QSystemTrayIcon::MessageIcon messageIcone =
+       QSystemTrayIcon::MessageIcon(QSystemTrayIcon::Information);}
+00162     \textcolor{comment}{//iconeSysteme->showMessage(titre, message, messageIcone, duree);}
+00163 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_afc6c48489b270b22a660e32668d6b2ca}\label{class_ihm_groom_afc6c48489b270b22a660e32668d6b2ca}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!changement\+Fonction@{changement\+Fonction}}
+\index{changement\+Fonction@{changement\+Fonction}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{changement\+Fonction}{changementFonction}}
+{\footnotesize\ttfamily Ihm\+Groom\+::changement\+Fonction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+change la focntion sur l\textquotesingle{}ihm 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00075}{75} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00089}{controle}, \hyperlink{controle_8cpp_source_l00096}{Controle\+::get\+Fonction()}, et \hyperlink{ihmgroom_8h_source_l00085}{ui}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00101}{Controle\+::coder\+Trame\+Affichage()}.
+
+
+\begin{DoxyCode}
+00076 \{
+00077     \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->label\_Fonction->setWindowTitle(\hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_a8d2891b2b01c503d10f775b4b14a3777}{getFonction}());
+00078 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_aa270d1fb6a7a9c1385c4ae3e67451ea0}\label{class_ihm_groom_aa270d1fb6a7a9c1385c4ae3e67451ea0}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!changement\+Nom@{changement\+Nom}}
+\index{changement\+Nom@{changement\+Nom}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{changement\+Nom}{changementNom}}
+{\footnotesize\ttfamily Ihm\+Groom\+::changement\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+change le nom sur l\textquotesingle{}ihm 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00065}{65} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00089}{controle}, \hyperlink{controle_8cpp_source_l00080}{Controle\+::get\+Nom()}, et \hyperlink{ihmgroom_8h_source_l00085}{ui}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00101}{Controle\+::coder\+Trame\+Affichage()}.
+
+
+\begin{DoxyCode}
+00066 \{
+00067     \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->label\_Nom->setWindowTitle(\hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_ac6e8590a5108e97fce3ce3aa43feb881}{getNom}());
+00068 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a2e8db190224f15326552a5bd642a9347}\label{class_ihm_groom_a2e8db190224f15326552a5bd642a9347}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!changement\+Prenom@{changement\+Prenom}}
+\index{changement\+Prenom@{changement\+Prenom}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{changement\+Prenom}{changementPrenom}}
+{\footnotesize\ttfamily Ihm\+Groom\+::changement\+Prenom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+change le prenom sur l\textquotesingle{}ihm 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00070}{70} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00089}{controle}, \hyperlink{controle_8cpp_source_l00088}{Controle\+::get\+Prenom()}, et \hyperlink{ihmgroom_8h_source_l00085}{ui}.
+
+
+
+Référencé par \hyperlink{controle_8cpp_source_l00101}{Controle\+::coder\+Trame\+Affichage()}.
+
+
+\begin{DoxyCode}
+00071 \{
+00072     \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->label\_Prenom->setWindowTitle(\hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_a0164fd9066b1703498576095ab5642c5}{getPrenom}());
+00073 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a8063930f323ce85b679c7598742f325d}\label{class_ihm_groom_a8063930f323ce85b679c7598742f325d}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!close\+Event@{close\+Event}}
+\index{close\+Event@{close\+Event}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{close\+Event()}{closeEvent()}}
+{\footnotesize\ttfamily void Ihm\+Groom\+::close\+Event (\begin{DoxyParamCaption}\item[{Q\+Close\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Méthode redéfinie qui est appelée automatiquement lors d\textquotesingle{}une demande de fermeture. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & L\textquotesingle{}évènement de fermeture reçu \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00087}{87} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00099}{etat\+Initial\+Icone\+Systeme}, et \hyperlink{ihmgroom_8h_source_l00093}{icone\+Systeme}.
+
+
+\begin{DoxyCode}
+00088 \{
+00089     \textcolor{keywordflow}{if} (\hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme}->isVisible())
+00090     \{
+00091         \textcolor{keywordflow}{if}(\hyperlink{class_ihm_groom_a95d2d2b4b3b849c1b21f234844fca056}{etatInitialIconeSysteme})
+00092         \{
+00093             QMessageBox::information(\textcolor{keyword}{this}, \textcolor{stringliteral}{"Groom"}, \textcolor{stringliteral}{"Le programme continue à s'éxécuter. Utiliser le menu
+       Quitter pour mettre fin à l'application Groom."});
+00094             \hyperlink{class_ihm_groom_a95d2d2b4b3b849c1b21f234844fca056}{etatInitialIconeSysteme} = \textcolor{keyword}{false};
+00095         \}
+00096         hide();
+00097         \textcolor{keyword}{event}->ignore();
+00098     \}
+00099 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_addfe25c3da6ddecfbdcb5b3cf062d724}\label{class_ihm_groom_addfe25c3da6ddecfbdcb5b3cf062d724}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!initialiser\+Icone\+Systeme@{initialiser\+Icone\+Systeme}}
+\index{initialiser\+Icone\+Systeme@{initialiser\+Icone\+Systeme}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{initialiser\+Icone\+Systeme()}{initialiserIconeSysteme()}}
+{\footnotesize\ttfamily Ihm\+Groom\+::initialiser\+Icone\+Systeme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Méthode qui permet à l\textquotesingle{}application de s\textquotesingle{}intaller dans la barre système. 
+
+Affichage dans barre des taches. 
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00106}{106} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8cpp_source_l00170}{acquitter\+Notification()}, \hyperlink{ihmgroom_8h_source_l00096}{action\+Maximiser}, \hyperlink{ihmgroom_8h_source_l00095}{action\+Minimiser}, \hyperlink{ihmgroom_8h_source_l00098}{action\+Quitter}, \hyperlink{ihmgroom_8h_source_l00097}{action\+Restaurer}, \hyperlink{ihmgroom_8h_source_l00099}{etat\+Initial\+Icone\+Systeme}, \hyperlink{ihmgroom_8h_source_l00093}{icone\+Systeme}, et \hyperlink{ihmgroom_8h_source_l00094}{menu\+Icone\+Systeme}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}.
+
+
+\begin{DoxyCode}
+00107 \{
+00108     \textcolor{comment}{// Crée les actions}
+00109     \hyperlink{class_ihm_groom_a4018ccf7f73329725e4c54002ae72f01}{actionMinimiser} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"Minimiser"}), \textcolor{keyword}{this});
+00110     \hyperlink{class_ihm_groom_aa23dc46d5e223aa20bb84b5bd99d3b81}{actionMaximiser} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"Maximiser"}), \textcolor{keyword}{this});
+00111     \hyperlink{class_ihm_groom_aa2df6badfa16f802411b502228fb8704}{actionRestaurer} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"Restaurer"}), \textcolor{keyword}{this});
+00112     \hyperlink{class_ihm_groom_ab28c091688d25e93b2baf99b4aa90f07}{actionQuitter} = \textcolor{keyword}{new} QAction(QString::fromUtf8(\textcolor{stringliteral}{"&Quitter"}), \textcolor{keyword}{this});
+00113 
+00114     \textcolor{comment}{// Connecte les actions}
+00115     connect(\hyperlink{class_ihm_groom_a4018ccf7f73329725e4c54002ae72f01}{actionMinimiser}, SIGNAL(triggered(\textcolor{keywordtype}{bool})), \textcolor{keyword}{this}, SLOT(hide()));
+00116     connect(\hyperlink{class_ihm_groom_aa23dc46d5e223aa20bb84b5bd99d3b81}{actionMaximiser}, SIGNAL(triggered(\textcolor{keywordtype}{bool})), \textcolor{keyword}{this}, SLOT(showMaximized()));
+00117     connect(\hyperlink{class_ihm_groom_aa2df6badfa16f802411b502228fb8704}{actionRestaurer}, SIGNAL(triggered(\textcolor{keywordtype}{bool})), \textcolor{keyword}{this}, SLOT(showNormal()));
+00118     connect(\hyperlink{class_ihm_groom_ab28c091688d25e93b2baf99b4aa90f07}{actionQuitter}, SIGNAL(triggered(\textcolor{keywordtype}{bool})), qApp, SLOT(quit()));
+00119 
+00120     \textcolor{comment}{// Crée le menu}
+00121     \hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menuIconeSysteme} = \textcolor{keyword}{new} QMenu(\textcolor{keyword}{this});
+00122     \hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menuIconeSysteme}->addAction(\hyperlink{class_ihm_groom_a4018ccf7f73329725e4c54002ae72f01}{actionMinimiser});
+00123     \hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menuIconeSysteme}->addAction(\hyperlink{class_ihm_groom_aa23dc46d5e223aa20bb84b5bd99d3b81}{actionMaximiser});
+00124     \hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menuIconeSysteme}->addAction(\hyperlink{class_ihm_groom_aa2df6badfa16f802411b502228fb8704}{actionRestaurer});
+00125     \hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menuIconeSysteme}->addSeparator();
+00126     \hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menuIconeSysteme}->addAction(\hyperlink{class_ihm_groom_ab28c091688d25e93b2baf99b4aa90f07}{actionQuitter});
+00127 
+00128     \textcolor{comment}{// Crée l'icône pour la barre de tâche}
+00129     \hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme} = \textcolor{keyword}{new} QSystemTrayIcon(\textcolor{keyword}{this});
+00130     \hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme}->setContextMenu(\hyperlink{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}{menuIconeSysteme});
+00131     \hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme}->setToolTip(\textcolor{stringliteral}{"Groom"});
+00132     QIcon icone(\textcolor{stringliteral}{":/groom.png"});
+00133     \hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme}->setIcon(icone);
+00134     setWindowIcon(icone);
+00135 
+00136     connect(\hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme}, SIGNAL(messageClicked()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ihm_groom_a428ffaecbab91abb0824ad61afd3109e}{acquitterNotification}()));
+00137     \textcolor{comment}{//connect(iconeSysteme, SIGNAL(activated(QSystemTrayIcon::ActivationReason)), this,
+       SLOT(aActiveIconeSysteme(QSystemTrayIcon::ActivationReason)));}
+00138 
+00139     \hyperlink{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}{iconeSysteme}->show();
+00140     \hyperlink{class_ihm_groom_a95d2d2b4b3b849c1b21f234844fca056}{etatInitialIconeSysteme} = \textcolor{keyword}{true};
+00141 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a6a7d6102f1d90172215fd4f1aae6e166}\label{class_ihm_groom_a6a7d6102f1d90172215fd4f1aae6e166}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!inversion\+Image\+Sonnette@{inversion\+Image\+Sonnette}}
+\index{inversion\+Image\+Sonnette@{inversion\+Image\+Sonnette}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{inversion\+Image\+Sonnette}{inversionImageSonnette}}
+{\footnotesize\ttfamily Ihm\+Groom\+::inversion\+Image\+Sonnette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Inverse l\textquotesingle{}image de la sonnette. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00201}{201} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00089}{controle}, \hyperlink{controle_8cpp_source_l00033}{Controle\+::get\+Etat\+Sonnette()}, \hyperlink{controle_8cpp_source_l00028}{Controle\+::set\+Etat\+Sonnette()}, et \hyperlink{ihmgroom_8h_source_l00085}{ui}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}.
+
+
+\begin{DoxyCode}
+00202 \{
+00203 
+00204     \textcolor{keywordflow}{if} (\hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_acabf3768430c7f1acb268ca0fa1ddf99}{getEtatSonnette}())
+00205     \{
+00206         \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->pushButton\_5->setIcon(QIcon(\textcolor{stringliteral}{":/bellDisable.png"}));
+00207 
+00208         \hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_ac706c5e9ede46dab70631281b084e233}{setEtatSonnette}(\textcolor{keyword}{false});
+00209 
+00210     \}
+00211     \textcolor{keywordflow}{else}
+00212     \{
+00213         \hyperlink{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}{ui}->pushButton\_5->setIcon(QIcon(\textcolor{stringliteral}{":/bellEnable.png"}));
+00214         \hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_ac706c5e9ede46dab70631281b084e233}{setEtatSonnette}(\textcolor{keyword}{true});
+00215     \}
+00216 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_adc890fcb2368c7bf7654d8ed4af4912a}\label{class_ihm_groom_adc890fcb2368c7bf7654d8ed4af4912a}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!on\+\_\+push\+Button\+\_\+2\+\_\+clicked@{on\+\_\+push\+Button\+\_\+2\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+2\+\_\+clicked@{on\+\_\+push\+Button\+\_\+2\+\_\+clicked}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{on\+\_\+push\+Button\+\_\+2\+\_\+clicked}{on\_pushButton\_2\_clicked}}
+{\footnotesize\ttfamily void Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+2\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00229}{229} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00030}{A\+B\+S\+E\+NT}, \hyperlink{ihmgroom_8h_source_l00089}{controle}, et \hyperlink{controle_8cpp_source_l00018}{Controle\+::set\+Etat\+Utilisateur()}.
+
+
+\begin{DoxyCode}
+00230 \{
+00231     \hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_a62db54114d126d03dd332332b3942320}{setEtatUtilisateur}(\hyperlink{ihmgroom_8h_a62d1ab4a9b5e2f95388be50a975cc97d}{ABSENT});
+00232 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a1d981f0754a5fa2b01036fc5125fded2}\label{class_ihm_groom_a1d981f0754a5fa2b01036fc5125fded2}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!on\+\_\+push\+Button\+\_\+3\+\_\+clicked@{on\+\_\+push\+Button\+\_\+3\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+3\+\_\+clicked@{on\+\_\+push\+Button\+\_\+3\+\_\+clicked}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{on\+\_\+push\+Button\+\_\+3\+\_\+clicked}{on\_pushButton\_3\_clicked}}
+{\footnotesize\ttfamily Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+3\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+change l\textquotesingle{}état de la personne en Libre 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00219}{219} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00089}{controle}, \hyperlink{ihmgroom_8h_source_l00024}{L\+I\+B\+RE}, et \hyperlink{controle_8cpp_source_l00018}{Controle\+::set\+Etat\+Utilisateur()}.
+
+
+\begin{DoxyCode}
+00220 \{
+00221     \hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_a62db54114d126d03dd332332b3942320}{setEtatUtilisateur}(\hyperlink{ihmgroom_8h_a508cc209fbc99ea975d1c1ecb5f1c6fe}{LIBRE});
+00222 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_addb07bf87d4d6f7eb5604d742a6bf2ef}\label{class_ihm_groom_addb07bf87d4d6f7eb5604d742a6bf2ef}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!on\+\_\+push\+Button\+\_\+4\+\_\+clicked@{on\+\_\+push\+Button\+\_\+4\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+4\+\_\+clicked@{on\+\_\+push\+Button\+\_\+4\+\_\+clicked}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{on\+\_\+push\+Button\+\_\+4\+\_\+clicked}{on\_pushButton\_4\_clicked}}
+{\footnotesize\ttfamily void Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+4\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00224}{224} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00089}{controle}, \hyperlink{ihmgroom_8h_source_l00036}{O\+C\+C\+U\+PE}, et \hyperlink{controle_8cpp_source_l00018}{Controle\+::set\+Etat\+Utilisateur()}.
+
+
+\begin{DoxyCode}
+00225 \{
+00226     \hyperlink{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}{controle}->\hyperlink{class_controle_a62db54114d126d03dd332332b3942320}{setEtatUtilisateur}(\hyperlink{ihmgroom_8h_a81e3b7fe26a6f7e9e070cccd7faee6bf}{OCCUPE});
+00227 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a1bbde232f2fb38daedaa4562dfc8d1b5}\label{class_ihm_groom_a1bbde232f2fb38daedaa4562dfc8d1b5}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!on\+\_\+push\+Button\+\_\+6\+\_\+clicked@{on\+\_\+push\+Button\+\_\+6\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+6\+\_\+clicked@{on\+\_\+push\+Button\+\_\+6\+\_\+clicked}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{on\+\_\+push\+Button\+\_\+6\+\_\+clicked}{on\_pushButton\_6\_clicked}}
+{\footnotesize\ttfamily Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+6\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+affiche l\textquotesingle{}ihm communication bluetooth 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00181}{181} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00086}{communication\+Bluetooth}.
+
+
+\begin{DoxyCode}
+00182 \{
+00183     \hyperlink{class_ihm_groom_a8e2b551df75d8dffdfbc9beb6c3691ba}{communicationBluetooth}->exec();
+00184 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_ac69005aef7c31e888d64890eb45c5e64}\label{class_ihm_groom_ac69005aef7c31e888d64890eb45c5e64}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!on\+\_\+push\+Button\+\_\+8\+\_\+clicked@{on\+\_\+push\+Button\+\_\+8\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+8\+\_\+clicked@{on\+\_\+push\+Button\+\_\+8\+\_\+clicked}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{on\+\_\+push\+Button\+\_\+8\+\_\+clicked}{on\_pushButton\_8\_clicked}}
+{\footnotesize\ttfamily Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+8\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+affiche l\textquotesingle{}ihm importation 
+
+change l\textquotesingle{}état de la personne en Absent
+
+change l\textquotesingle{}état de la personne en Occupe 
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00186}{186} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00087}{ihm\+Importation}.
+
+
+\begin{DoxyCode}
+00187 \{
+00188     \hyperlink{class_ihm_groom_ab3f9d16d3e20234a71b1580d70ee4959}{ihmImportation}->exec();
+00189 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a5f8398886e8daa04d5a0f3119f307f14}\label{class_ihm_groom_a5f8398886e8daa04d5a0f3119f307f14}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!on\+\_\+push\+Button\+\_\+9\+\_\+clicked@{on\+\_\+push\+Button\+\_\+9\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+9\+\_\+clicked@{on\+\_\+push\+Button\+\_\+9\+\_\+clicked}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{on\+\_\+push\+Button\+\_\+9\+\_\+clicked}{on\_pushButton\_9\_clicked}}
+{\footnotesize\ttfamily void Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+9\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00196}{196} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00090}{bdd}.
+
+
+\begin{DoxyCode}
+00197 \{
+00198     \hyperlink{class_ihm_groom_aba1bfff9bc610e6a626d3af4cec266f9}{bdd}->exec();
+00199 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_ad3fbc13397279793b240d54b5a5f20b4}\label{class_ihm_groom_ad3fbc13397279793b240d54b5a5f20b4}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!on\+\_\+push\+Button\+\_\+clicked@{on\+\_\+push\+Button\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+clicked@{on\+\_\+push\+Button\+\_\+clicked}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{on\+\_\+push\+Button\+\_\+clicked}{on\_pushButton\_clicked}}
+{\footnotesize\ttfamily Ihm\+Groom\+::on\+\_\+push\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+affiche l\textquotesingle{}ihm Message personnalisé 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00191}{191} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8h_source_l00088}{message\+Personnalise}.
+
+
+\begin{DoxyCode}
+00192 \{
+00193     \hyperlink{class_ihm_groom_a529729b93d7b8d17147d3b47fe9a274d}{messagePersonnalise}->exec();
+00194 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ihm_groom_a53838a4bd054fe5c85c23eced3eacc8b}\label{class_ihm_groom_a53838a4bd054fe5c85c23eced3eacc8b}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!tester\+Notification@{tester\+Notification}}
+\index{tester\+Notification@{tester\+Notification}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{tester\+Notification}{testerNotification}}
+{\footnotesize\ttfamily void Ihm\+Groom\+::tester\+Notification (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8cpp_source_l00175}{175} du fichier \hyperlink{ihmgroom_8cpp_source}{ihmgroom.\+cpp}.
+
+
+
+Références \hyperlink{ihmgroom_8cpp_source_l00151}{afficher\+Notification()}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}.
+
+
+\begin{DoxyCode}
+00176 \{
+00177     \hyperlink{class_ihm_groom_a55194db52eca3648aad391274a6bb709}{afficherNotification}(\textcolor{stringliteral}{"Groom"}, \textcolor{stringliteral}{"Rendez-vous annulé !"});
+00178 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_ihm_groom_aa23dc46d5e223aa20bb84b5bd99d3b81}\label{class_ihm_groom_aa23dc46d5e223aa20bb84b5bd99d3b81}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!action\+Maximiser@{action\+Maximiser}}
+\index{action\+Maximiser@{action\+Maximiser}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{action\+Maximiser}{actionMaximiser}}
+{\footnotesize\ttfamily Q\+Action$\ast$ Ihm\+Groom\+::action\+Maximiser\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}action maximiser l\textquotesingle{}application. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00096}{96} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+\mbox{\Hypertarget{class_ihm_groom_a4018ccf7f73329725e4c54002ae72f01}\label{class_ihm_groom_a4018ccf7f73329725e4c54002ae72f01}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!action\+Minimiser@{action\+Minimiser}}
+\index{action\+Minimiser@{action\+Minimiser}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{action\+Minimiser}{actionMinimiser}}
+{\footnotesize\ttfamily Q\+Action$\ast$ Ihm\+Groom\+::action\+Minimiser\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}action minimiser l\textquotesingle{}application. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00095}{95} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+\mbox{\Hypertarget{class_ihm_groom_ab28c091688d25e93b2baf99b4aa90f07}\label{class_ihm_groom_ab28c091688d25e93b2baf99b4aa90f07}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!action\+Quitter@{action\+Quitter}}
+\index{action\+Quitter@{action\+Quitter}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{action\+Quitter}{actionQuitter}}
+{\footnotesize\ttfamily Q\+Action$\ast$ Ihm\+Groom\+::action\+Quitter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}action quitter l\textquotesingle{}application. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00098}{98} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+\mbox{\Hypertarget{class_ihm_groom_aa2df6badfa16f802411b502228fb8704}\label{class_ihm_groom_aa2df6badfa16f802411b502228fb8704}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!action\+Restaurer@{action\+Restaurer}}
+\index{action\+Restaurer@{action\+Restaurer}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{action\+Restaurer}{actionRestaurer}}
+{\footnotesize\ttfamily Q\+Action$\ast$ Ihm\+Groom\+::action\+Restaurer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}action restaurer l\textquotesingle{}application. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00097}{97} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+\mbox{\Hypertarget{class_ihm_groom_aba1bfff9bc610e6a626d3af4cec266f9}\label{class_ihm_groom_aba1bfff9bc610e6a626d3af4cec266f9}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!bdd@{bdd}}
+\index{bdd@{bdd}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_bdd}{Bdd}$\ast$ Ihm\+Groom\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+Objet servant a controller les trame reçues et envoyés 
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00090}{90} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}, et \hyperlink{ihmgroom_8cpp_source_l00196}{on\+\_\+push\+Button\+\_\+9\+\_\+clicked()}.
+
+\mbox{\Hypertarget{class_ihm_groom_a8e2b551df75d8dffdfbc9beb6c3691ba}\label{class_ihm_groom_a8e2b551df75d8dffdfbc9beb6c3691ba}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!communication\+Bluetooth@{communication\+Bluetooth}}
+\index{communication\+Bluetooth@{communication\+Bluetooth}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{communication\+Bluetooth}{communicationBluetooth}}
+{\footnotesize\ttfamily \hyperlink{class_communication_bluetooth}{Communication\+Bluetooth}$\ast$ Ihm\+Groom\+::communication\+Bluetooth\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}interface de la Configuration. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00086}{86} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}, et \hyperlink{ihmgroom_8cpp_source_l00181}{on\+\_\+push\+Button\+\_\+6\+\_\+clicked()}.
+
+\mbox{\Hypertarget{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}\label{class_ihm_groom_acead732c303b50a3285bd311ac8a3b4f}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!controle@{controle}}
+\index{controle@{controle}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{controle}{controle}}
+{\footnotesize\ttfamily \hyperlink{class_controle}{Controle}$\ast$ Ihm\+Groom\+::controle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00089}{89} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00075}{changement\+Fonction()}, \hyperlink{ihmgroom_8cpp_source_l00065}{changement\+Nom()}, \hyperlink{ihmgroom_8cpp_source_l00070}{changement\+Prenom()}, \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}, \hyperlink{ihmgroom_8cpp_source_l00201}{inversion\+Image\+Sonnette()}, \hyperlink{ihmgroom_8cpp_source_l00229}{on\+\_\+push\+Button\+\_\+2\+\_\+clicked()}, \hyperlink{ihmgroom_8cpp_source_l00219}{on\+\_\+push\+Button\+\_\+3\+\_\+clicked()}, et \hyperlink{ihmgroom_8cpp_source_l00224}{on\+\_\+push\+Button\+\_\+4\+\_\+clicked()}.
+
+\mbox{\Hypertarget{class_ihm_groom_a95d2d2b4b3b849c1b21f234844fca056}\label{class_ihm_groom_a95d2d2b4b3b849c1b21f234844fca056}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!etat\+Initial\+Icone\+Systeme@{etat\+Initial\+Icone\+Systeme}}
+\index{etat\+Initial\+Icone\+Systeme@{etat\+Initial\+Icone\+Systeme}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{etat\+Initial\+Icone\+Systeme}{etatInitialIconeSysteme}}
+{\footnotesize\ttfamily bool Ihm\+Groom\+::etat\+Initial\+Icone\+Systeme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Booléen indiquant si c\textquotesingle{}est la première demande Quitter. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00099}{99} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00087}{close\+Event()}, et \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+\mbox{\Hypertarget{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}\label{class_ihm_groom_a9ca0929cf284a9a2e3e2bc3489249919}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!icone\+Systeme@{icone\+Systeme}}
+\index{icone\+Systeme@{icone\+Systeme}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{icone\+Systeme}{iconeSysteme}}
+{\footnotesize\ttfamily Q\+System\+Tray\+Icon$\ast$ Ihm\+Groom\+::icone\+Systeme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}icône de l\textquotesingle{}application pour la barre système. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00093}{93} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00151}{afficher\+Notification()}, \hyperlink{ihmgroom_8cpp_source_l00087}{close\+Event()}, et \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+\mbox{\Hypertarget{class_ihm_groom_ab3f9d16d3e20234a71b1580d70ee4959}\label{class_ihm_groom_ab3f9d16d3e20234a71b1580d70ee4959}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!ihm\+Importation@{ihm\+Importation}}
+\index{ihm\+Importation@{ihm\+Importation}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{ihm\+Importation}{ihmImportation}}
+{\footnotesize\ttfamily \hyperlink{class_importation}{Importation}$\ast$ Ihm\+Groom\+::ihm\+Importation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}interface de l\textquotesingle{}\hyperlink{class_importation}{Importation}. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00087}{87} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}, et \hyperlink{ihmgroom_8cpp_source_l00186}{on\+\_\+push\+Button\+\_\+8\+\_\+clicked()}.
+
+\mbox{\Hypertarget{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}\label{class_ihm_groom_af2abf22a1a9203af547f32c7edb13710}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!menu\+Icone\+Systeme@{menu\+Icone\+Systeme}}
+\index{menu\+Icone\+Systeme@{menu\+Icone\+Systeme}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{menu\+Icone\+Systeme}{menuIconeSysteme}}
+{\footnotesize\ttfamily Q\+Menu$\ast$ Ihm\+Groom\+::menu\+Icone\+Systeme\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Le menu de l\textquotesingle{}application. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00094}{94} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00106}{initialiser\+Icone\+Systeme()}.
+
+\mbox{\Hypertarget{class_ihm_groom_a529729b93d7b8d17147d3b47fe9a274d}\label{class_ihm_groom_a529729b93d7b8d17147d3b47fe9a274d}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!message\+Personnalise@{message\+Personnalise}}
+\index{message\+Personnalise@{message\+Personnalise}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{message\+Personnalise}{messagePersonnalise}}
+{\footnotesize\ttfamily \hyperlink{class_message_personnalise}{Message\+Personnalise}$\ast$ Ihm\+Groom\+::message\+Personnalise\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}interface du Message Personnalisé 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00088}{88} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}, et \hyperlink{ihmgroom_8cpp_source_l00191}{on\+\_\+push\+Button\+\_\+clicked()}.
+
+\mbox{\Hypertarget{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}\label{class_ihm_groom_af652e1ce199213b7867e44cf589c06b8}} 
+\index{Ihm\+Groom@{Ihm\+Groom}!ui@{ui}}
+\index{ui@{ui}!Ihm\+Groom@{Ihm\+Groom}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Ihm\+Groom$\ast$ Ihm\+Groom\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}interface utilisateur. 
+
+
+
+Définition à la ligne \hyperlink{ihmgroom_8h_source_l00085}{85} du fichier \hyperlink{ihmgroom_8h_source}{ihmgroom.\+h}.
+
+
+
+Référencé par \hyperlink{ihmgroom_8cpp_source_l00075}{changement\+Fonction()}, \hyperlink{ihmgroom_8cpp_source_l00065}{changement\+Nom()}, \hyperlink{ihmgroom_8cpp_source_l00070}{changement\+Prenom()}, \hyperlink{ihmgroom_8cpp_source_l00031}{Ihm\+Groom()}, \hyperlink{ihmgroom_8cpp_source_l00201}{inversion\+Image\+Sonnette()}, et \hyperlink{ihmgroom_8cpp_source_l00059}{$\sim$\+Ihm\+Groom()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ihmgroom_8h}{ihmgroom.\+h}\item 
+\hyperlink{ihmgroom_8cpp}{ihmgroom.\+cpp}\end{DoxyCompactItemize}

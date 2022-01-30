@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="bellEnable.png">icon/bell.png</file>
+        <file alias="alert.png">icon/alert.png</file>
+        <file alias="import.png">icon/import.png</file>
+        <file alias="settings.png">icon/settings.png</file>
+        <file alias="groom.png">icon/groom.png</file>
+		<file alias="bellDisable.png">icon/bell-ConvertImage.png</file>
+        <file alias="Bdd.png">icon/server.png</file>
+    </qresource>
+</RCC>
